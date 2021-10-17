@@ -93,6 +93,9 @@ Az alkalmazás tárolni fogja a mérési eredményeket, ezeket külön menüpont
 
 GitHub elérése a [képeknek](https://github.com/HPeti/SZFM_2021_10_TeamBFK_Mobile_Measurement/tree/master/Doc/Pictures).
 
+A működéséről készült egy [interaktív demo](https://app.uizard.io/p/2c59f2b3), ami előzetesen bemutatja, milyen működést várhatunk az appunktól.
+
+
 ## 9. Forgatókönyvek
 
 * Válaszd ki/ add meg a mérés ID-t. 
