@@ -33,7 +33,15 @@ A mérések legyenek eltárolva vagy helyileg vagy egy szerveren.
 * 3.6 A bútor átadása.
 
 ## 4. Igényelt üzleti folyamatok
-
+* 4.1 A szoftver telepítése a munkások készülékére ami lehet a saját vagy a cég által biztosított készülék.
+* 4.2 A szoftver működésének elmagyarázása a dolgozoknak.
+* 4.3 A szoftver mükédésének bemutatása a gyakroltaban
+* 4.4 Az adott bútor méretének mintavételezése:
+* 4.5 A bútor több szemszögből történő lemérése
+* 4.6 A megfelelő tároló eszköz kiválasztása
+* 4.7 A szállító eszköz rakterének a lemérése, hogy a bútor valóban befér-e
+* 4.8 A bútor megrendelőhöz való elszállítása
+* 4.8 A bútor átadása.
 
 ## 5. A rendszerre vonatkozó szabályok
 
