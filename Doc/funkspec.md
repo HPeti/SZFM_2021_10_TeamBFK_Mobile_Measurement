@@ -7,6 +7,14 @@
 
 
 ## 3. Jelenlegi üzleti folyamatok
+* 3.1 Vonalzók, mérőszallagok, méterbotok beszerzése és pótlása éves szinten
+* 3.2 Az adott bútor méretének mintavételezése:
+     * 3.2.1 A bútor több szemszögből történő lemérése
+     * 3.2.2 A kapott méretek azonos mértékegységekbe való átváltása.
+* 3.3 A megfelelő tároló eszköz kiválasztása
+* 3.4 A szállító eszköz rakterének a lemérése, hogy a bútor valóban befér-e
+* 3.5 A bútor megrendelőhöz való elszállítása
+* 3.6 A bútor átadása.
 
 
 ## 4. Igényelt üzleti folyamatok
