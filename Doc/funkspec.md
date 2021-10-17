@@ -72,6 +72,7 @@ A mérések legyenek eltárolva vagy helyileg vagy egy szerveren.
 
 ## 7. Használati esetek
 
+Feltételezzük azt hogy nem áll rendelkezésére semmilyen eszköz arra, hogy megmérje a távolságot. Mivel csak a telefonja van nála ezért a program segítségével megméri. 
 
 ## 8. Képernyőtervek
 Az alap kinézete az alkalmazásunknak:
