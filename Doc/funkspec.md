@@ -69,18 +69,18 @@ A mérések legyenek eltárolva vagy helyileg vagy egy szerveren.
 Az alap kinézete az alkalmazásunknak:
 
 
-![Képernyőterv az alkalmazásról](/Pictures/SABLONtelefon.png)
+![Képernyőterv az alkalmazásról](./Pictures/SABLONtelefon.png)
 
 A menü gomb megnyomása után hasonló eredményt kapunk majd:
 
 
-![Képernyőterv az alkalmazásról](/Pictures/hamburger_menu.png)
+![Képernyőterv az alkalmazásról](./Pictures/hamburger_menu.png)
 
 
 Az alkalmazás tárolni fogja a mérési eredményeket, ezeket külön menüpontban érhetjük majd el:
 
 
-![Képernyőterv az alkalmazásról](/Pictures/previous_measures.png)
+![Képernyőterv az alkalmazásról](./Pictures/previous_measures.png)
 
 GitHub elérése a [képeknek](https://github.com/HPeti/SZFM_2021_10_TeamBFK_Mobile_Measurement/tree/master/Doc/Pictures).
 
