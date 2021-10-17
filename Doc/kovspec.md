@@ -45,6 +45,14 @@ A mérések legyenek eltárolva vagy helyileg vagy egy szerveren.
 
 ## 5. A rendszerre vonatkozó szabályok
 
+* Az alkalmazás működjön Android telefonokon (legalább Android 6.0 és fölötte)
+* A mérésekből több típust hajtsunk végre, ami megnyílvánul a távolság, orientáció, szög és a mintavételezés gyakoriságának változásában is.
+* A méréseknél a gravitációs gyorsulás kiszűréséhez használjunk Kálmán-szűrőt vagy lassú szűrőt.
+* A méréseket tároljuk el offline vagy online módon.
+     * Offline tárolás esetén mentsük el egy CSV fájlba a méréseket az adataival együtt. Ezt később manuálisan vagy automatizálva töltsük fel egy adatbázisba.
+     * Online tárolás esetén töltsük fel egy adatbázisba a mérések eredményeit.
+* A mérések legyenek beazonosíthatók valami alapján, csv esetén a telefon azonosítójával/típusával, dátumával és esetleges megnevezésével a mérésnek.
+* Több telefonon is teszteljük a méréseket, amelyek alapján megfigyelhetjük az egyes telefonok pontosságát egyes területeken elvégzett mérésekkel. (Esetleg az adatok összességén egy statisztikát fogunk létrehozni az adatok vizualizálásával.)
 
 ## 6. Követelménylista
 
