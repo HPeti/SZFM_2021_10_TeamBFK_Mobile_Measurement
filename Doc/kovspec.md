@@ -77,3 +77,6 @@ A méréseket több telefon segítségével végezzük, a méréseket vagy sql s
 
 Egy mérést tudjunk azonosítani telefon, dátum alapján. Opcionálisan tudjunk neki adni nevet. 
 
+## 8. Fogalomszótár
+
+**Kálmán szűrő:** egy algoritmus, mely mozgó, változó rendszerek állapotáról ad optimális becslést sorozatos mérésekkel, figyelembe véve az állapotméréseket és a zavaró tényezőket (zajok, bizonytalanságok, pontatlanságok). Ezzel az algoritmussal jóval pontosabb információ kapható a vizsgált tárgyról, mintha csak egy mérést végeznének el. Más szóval a Kálmán-szűrő a zajos bemenő adatok rekurzív mérésével egy optimális becslést ad a mérés tárgyának állapotáról.
