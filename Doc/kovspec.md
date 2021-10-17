@@ -62,3 +62,18 @@ A mérések legyenek eltárolva vagy helyileg vagy egy szerveren.
 | K10 | Telefon szöge | Nézzük meg, hogy melyik pontosabb az adott telefonon, hogyha egy síkon más-más szögbe mérjük meg a távolságot. |
 | K11 | Szűrők alkalmazása | A gravitációs gyorsulás kiszűréséhez használjunk kálmán szűrőt a mérések eredményéhez. |
 | K12 | Tesztelés | Az alkalmazást tesztelni kell több telefonon is, mindegyik méréssel és mintavételezési gyakorisággal is, több orientációban. Ezeket egy adatbázisban összegyűjtük. Mindegyik telefonon körülbelül 3-5 mérést végezzünk el! |
+
+## 7. Riport szövege
+
+Az alkamazás a telefon gyorsulásmerő szenzorát használva állatpítsa meg a távolságot, műholdas kapcsolat segítsége nélkül.
+
+Kálmán szűrő használata ajánlott.
+
+Több mérést végezzünk, ezeket átlagoljuk. 
+
+Egy mérés eltérhet nagysága, orientációja, szöge mintavételezési gyakorisága alapján.
+
+A méréseket több telefon segítségével végezzük, a méréseket vagy sql szerveren, vagy csv fájl segítségével gyűjtjük össze.
+
+Egy mérést tudjunk azonosítani telefon, dátum alapján. Opcionálisan tudjunk neki adni nevet. 
+
