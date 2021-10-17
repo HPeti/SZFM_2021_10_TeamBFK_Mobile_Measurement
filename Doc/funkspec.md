@@ -111,3 +111,6 @@ GitHub elérése a [képeknek](https://github.com/HPeti/SZFM_2021_10_TeamBFK_Mob
 * Amint végeztünk az ismétlésekkel új mérést indíthatunk.
 
 ## 10. Fogalomszótár
+
+**Kálmán szűrő:** egy algoritmus, mely mozgó, változó rendszerek állapotáról ad optimális becslést sorozatos mérésekkel, figyelembe véve az állapotméréseket és a zavaró tényezőket (zajok, bizonytalanságok, pontatlanságok). Ezzel az algoritmussal jóval pontosabb információ kapható a vizsgált tárgyról, mintha csak egy mérést végeznének el. Más szóval a Kálmán-szűrő a zajos bemenő adatok rekurzív mérésével egy optimális becslést ad a mérés tárgyának állapotáról.
+Az algoritmus két lépésben működik. Az első becslési lépésben a Kálmán–szűrő kiszámolja az aktuális állapotváltozókat, a bizonytalanságokkal együtt. A következő mérés eredményeit súlyozott átlagolással veszi figyelembe. A sorozatos valós idejű mérések során az átlagolás eredményeként egyre jobb értékek adódnak, ahol a zajok és egyéb zavaró tényezők kiesnek. Az algoritmus rekurzív jellegű, csak az aktuális kalkulált állapotot, és az aktuális mérési eredményeket veszi figyelembe, korábban mért adatokat nem használ fel. Elméletileg, a Kálmán-szűrő alapfeltevése az, hogy a vizsgált rendszer egy lineáris dinamikus rendszer, és minden hibafüggvénynek és -mérésnek is normális eloszlása van (gyakran többváltozós a normális eloszlás).
