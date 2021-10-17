@@ -95,5 +95,19 @@ GitHub elérése a [képeknek](https://github.com/HPeti/SZFM_2021_10_TeamBFK_Mob
 
 ## 9. Forgatókönyvek
 
+* Válaszd ki/ add meg a mérés ID-t. 
+     * Ehhez a méréshez fog a statisztikába bekerülni a mérés.
+* Válaszd ki,hogy a mérés beállításai milyenek legyenek.
+     * mérés nagysága.
+     * mintavételezés gyakorisága.
+* Add meg hányszor akarod ismételni a mérést.
+     * A mérés pontosságának növeléséhez több mérést hajtunk végre, esetleg igény esetén ezeket a méréseket átlagoljuk.
+* Start gombbal el tudjuk indítani a mérést.
+* Stop gombbal leállítjuk a mérést.
+     * Megjelenik a mérés eredménye.
+     * Elmenthetjük 
+     * Újrakezdhetjük 
+     * Továbbléphetünk a következő mérésre.
+* Amint végeztünk az ismétlésekkel új mérést indíthatunk.
 
 ## 10. Fogalomszótár
