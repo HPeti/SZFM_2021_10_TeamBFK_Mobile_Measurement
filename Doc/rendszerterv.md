@@ -41,11 +41,10 @@ A projekt részeinek heti lebontása az alábbi táblázatban látható:
 Ide vesszük fel majd a mérföldköveket, amelyek sprintek között fog történni.
 
 ## 3. Üzleti folyamatok modellje
-### 3.1. Üzleti szereplők
 
-### 3.1. Üzleti folyamatok
-
-### 3.1. Üzleti entitások
+1. Egy bútorszállítással foglalkozó cég felkérte csapatunkat, hogy csináljunk egy mobil alkalmazást, amellyel távolságot tudnak mérni.
+2. A fejlesztőkkel több hetes lebontásba fogjuk megcsinálni az alkalmazást, dokumentációkkal mellékelve, a szükséges szerződések megkötésével és eközben folyamatosan kommunikálunk az ügyféllel időszakosan.
+3. Ha az ügyfélnek és a fejlesztőknek is megfelel a szoftver, akkor végül publikáljuk éles szervereken is.
 
 ## 4. Követelmények
 ### 4.1. Funkcionális követelmények
