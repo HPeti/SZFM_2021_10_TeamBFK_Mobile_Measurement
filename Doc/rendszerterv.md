@@ -65,6 +65,26 @@ Ide vesszük fel majd a mérföldköveket, amelyek sprintek között fog törté
 
 ### 5.5. Képernyőtervek
 
+Az alap kinézete az alkalmazásunknak:
+
+
+![Képernyőterv az alkalmazásról](./Pictures/SABLONtelefon.png)
+
+A menü gomb megnyomása után hasonló eredményt kapunk majd:
+
+
+![Képernyőterv az alkalmazásról](./Pictures/hamburger_menu.png)
+
+
+Az alkalmazás tárolni fogja a mérési eredményeket, ezeket külön menüpontban érhetjük majd el:
+
+
+![Képernyőterv az alkalmazásról](./Pictures/previous_measures.png)
+
+GitHub elérése a [képeknek](https://github.com/HPeti/SZFM_2021_10_TeamBFK_Mobile_Measurement/tree/master/Doc/Pictures).
+
+A működéséről készült egy [interaktív demo](https://app.uizard.io/p/2c59f2b3), ami előzetesen bemutatja, milyen működést várhatunk az appunktól.
+
 ## 6. Fizikai környezet
 ### 6.1. Vásárolt szoftverkomponensek és külső rendszerek
 
