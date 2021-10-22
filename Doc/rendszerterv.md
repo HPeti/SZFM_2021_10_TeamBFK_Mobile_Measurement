@@ -4,6 +4,10 @@
 
 ## 2. Projekt terv
 ### 2.1. Projektszerepkörök, felelősségek
+* Scrum master: Hegedűs Péter
+* Termék tulajdonos (Product owner): - 
+* Csapat (Team): Halász Dániel, Hegedűs Péter, Káplár István, Nyika Benedek, Sápi Gábor
+* Üzleti szereplők: megrendelő ügyfél
 
 ### 2.2. Projektmunkások, felelősségeik
 |      Név      | Felelősségek |
