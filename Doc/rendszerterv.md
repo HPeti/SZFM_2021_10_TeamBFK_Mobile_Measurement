@@ -12,11 +12,12 @@
 ### 2.2. Projektmunkások, felelősségeik
 |      Név      | Felelősségek |
 |     :---:     |     ----     |
-| Halász Dániel | Fejlesztés, tesztelés, dokumentáció |
-| Hegedűs Péter | Fejlesztés, tesztelés, dokumentáció |
-| Káplár István | Fejlesztés, tesztelés, dokumentáció |
+| Halász Dániel | Fejlesztés, tesztelés, dokumentáció, adatbázis |
+| Hegedűs Péter | Fejlesztés, tesztelés, dokumentáció, adatbázis |
+| Káplár István | Fejlesztés, tesztelés, dokumentáció, adatbázis|
 | Nyika Benedek | Fejlesztés, tesztelés, dokumentáció, képernyőtervek |
 | Sápi Gábor    | Fejlesztés, tesztelés, dokumentáció, képernyőtervek |
+
 ### 2.3. Ütemterv
 
 A projekt részeinek heti lebontása az alábbi táblázatban látható:
