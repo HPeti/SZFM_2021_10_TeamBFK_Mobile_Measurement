@@ -38,6 +38,7 @@ A projekt részeinek heti lebontása az alábbi táblázatban látható:
 | Átadás-átvétel (értékelés) | A kész projekt átadása | Értékelés | Normál | 2021. 12. 05. | - | - | - |
 
 ### 2.4. Mérföldkövek
+Ide vesszük fel majd a mérföldköveket, amelyek sprintek között fog történni.
 
 ## 3. Üzleti folyamatok modellje
 ### 3.1. Üzleti szereplők
