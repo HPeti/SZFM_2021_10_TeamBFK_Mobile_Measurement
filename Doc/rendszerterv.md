@@ -47,11 +47,36 @@ Ide vesszük fel majd a mérföldköveket, amelyek sprintek között fog törté
 3. Ha az ügyfélnek és a fejlesztőknek is megfelel a szoftver, akkor végül publikáljuk éles szervereken is.
 
 ## 4. Követelmények
-### 4.1. Funkcionális követelmények
 
-### 4.2. Nemfunkcionális követelmények
+A rendszerrel szemben támasztott __általános követelmények__:
+* Az alkalmazás funkcióit bármelyik felhasználó használhatja.
+* Android 6.0-ig visszafelé kompatibilitás
+* Adatok tárolás adatbázis szerveren
+* Korábbi méréseket meg lehet tekinteni
 
-### 4.3. Törvényi előírások, szabványok
+__Felülettel__ szemben támasztott követelmények:
+* Letisztult és átlátható felülettel rendelkezzen az alkalmazás
+* Gördülékeny működés
+* Egyszerű UI felület
+* Navigáció az alkalmazáson belül
+* Visszajelzés a mérések végén
+
+__Funkcionális követelmények__:
+
+| ID | Név | Kifejtés|
+| :-: | :-- | :-- |
+| K01 | Android rendszer | Egyenlőre Android operációs rendszerre készül el a program, várhatóan Android 6.0 (Marshmallow) verzióig visszamenőleg lesz kompatibilis az alkalmazás |
+| K02 | Telefon azonosítása | Az elvégzett mérések eltárolásához szükséges, hogy valami alapján be tudjuk azonosítani azt, hogy melyik telefonon lett elvégezve a mérés|
+| K03 | Mérések tárolása offline | Ha nincs internet elérés, akkor tárolja el az alkalmazás az eddigi méréseket egy CSV állományba. Ezt vagy manuálisan feltöltjük az adatbázisba később, vagy automatizáljuk.|
+| K04 | Mérések tárolása online | Ha van internetelérés és megvalósítjuk az adatbázist hozzá, akkor az alkalmazás töltse fel az eddig elvégzett méréseket az adatbázisba. |
+| K05 | Adatbázis normalizálása | Ha adatbázist használunk, akkor legalább 3. normálformába hozzuk. |
+| K06 | Mérések részletei | Az alkalmazásba az elvégzett mérésekhez több infót is el kell tárolni az adatbázisba, ezeket ideális lenne egy listából kiválasztani vagy valami más interaktív módon a felhasználónak. |
+| K07 | Mérés nagysága | A felhasználó kiválasztja, hogy mekkora mérést végez el. Ez lehet 40 centiméter, 1 méter, 2 méter, 5 méter. |
+| K08 | Mintavételezés gyakorisága | A felhasználó kiválasztja, hogy milyen mintavételezési gyakoriságot akar használni az adott mérés során. Ez akár lehet 10 Hz, 1 MHz, 1 KHz. (Például rövid távolságon nagy mintavételezés, de nagy távolságon akár kisebb mintavételezési gyakoriság)  |
+| K09 | Telefon orientációja | Fel kell készíteni az alkalmazást, hogy tudjon a telefon síkba és állítva is tudjon mérni viszonylag pontosan a telefon. |
+| K10 | Telefon szöge | Nézzük meg, hogy melyik pontosabb az adott telefonon, hogyha egy síkon más-más szögbe mérjük meg a távolságot. |
+| K11 | Szűrők alkalmazása | A gravitációs gyorsulás kiszűréséhez használjunk kálmán szűrőt a mérések eredményéhez. |
+| K12 | Tesztelés | Az alkalmazást tesztelni kell több telefonon is, mindegyik méréssel és mintavételezési gyakorisággal is, több orientációban. Ezeket egy adatbázisban összegyűjtük. Mindegyik telefonon körülbelül 3-5 mérést végezzünk el! |
 
 ## 5. Funckionális terv
 ### 5.1. Rendszerszereplők
