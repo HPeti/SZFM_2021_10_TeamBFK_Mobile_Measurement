@@ -9,6 +9,23 @@
 
 ### 2.3. Ütemterv
 
+A projekt részeinek heti lebontása az alábbi táblázatban látható:
+
+| Funkció | Leírás | Csoportosítás | Prioritás | Határidő | Becslés |Eltelt idő | Hátralévő idő |
+|---------|--------|     :---:     |   :---:   |   :---:  |  :---:  |   :---:   |     :---:     |
+| Követelmény specifikáció | - | Dokumentáció | Alacsony | 2021. 10. 17. | 4 | 4 | 0 |
+| Funkcionális specifikáció | - | Dokumentáció | Alacsony | 2021. 10. 17. | 8 | 7 | 0 |
+| Rendszerterv | legalább 1 ábra legyen fejenként | Dokumentáció | Normál | 2021. 10. 24. | 12 | 7 | 5 |
+| Fejlesztés sprint 1 | - | Fejlesztés | Fontos | 2021. 10. 31. | - | - | - |
+| Fejlesztés sprint 2 | - | Fejlesztés | Fontos | 2021. 11. 7. | - | - | - |
+| Demó (projekt bemutató, értékeléssel) | - | Demó | Normál | 2021. 11. 14. | - | - | - |
+| Fejlesztés sprint 3 | - | Fejlesztés | Fontos | 2021. 11. 14. | - | - | - |
+| Fejlesztés sprint 4 | - | Fejlesztés | Fontos | 2021. 11. 21. | - | - | - |
+| Tesztelés | fejenként 10-20 tesztlépés, jegyzőkönyvezve | Tesztelés | Fontos | 2021. 11. 21. | - | - | - |
+| Fejlesztés sprint 5 | - | Fejlesztés | Fontos | 2021. 11. 28. | - | - | - |
+| Tesztelés (2) | Teszt dokumentáció tesztelése, fejenként 10-20 tesztlépés, jegyzőkönyvezve | Fejlesztés | Fontos | 2021. 11. 28. | - | - | - |
+| Átadás-átvétel (értékelés) | A kész projekt átadása | Értékelés | Normál | 2021. 12. 05. | - | - | - |
+
 ### 2.4. Mérföldkövek
 
 ## 3. Üzleti folyamatok modellje
