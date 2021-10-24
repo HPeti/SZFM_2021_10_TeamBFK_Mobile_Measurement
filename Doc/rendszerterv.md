@@ -148,6 +148,9 @@ Szerver: Egy adatbázis környezetet futtató rendszer, amelyet távolról el le
 
 ### 7.2. Absztrakt komponensek, ezek kapcsolatai
 
+Szükség van Androidos telefonra, SQL szerverre, illetve az ezek közötti kapcsolatra.
+Az Androidos alkalmazás kommunikál a szerverrel az Interneten kreszetül. 
+
 ## 8. Architekturális terv
 ### 8.1. Egy architekturális tervezési minta
 
