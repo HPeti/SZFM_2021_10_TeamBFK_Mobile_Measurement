@@ -91,6 +91,8 @@ __Funkcionális követelmények__:
 ### 5.1. Rendszerszereplők
 
 ### 5.2. Rendszerhasználati esetek és lefutásaik
+![Use-case diagram a használati esetekről](./Pictures/use_case_for_users.jpg)
+Ez a diagram még változhat, ha több műveletet is fel akarunk venni az alkalmazáson belülre.
 
 ### 5.3. Határosztályok
 
