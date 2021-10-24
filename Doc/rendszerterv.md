@@ -89,6 +89,7 @@ __Funkcionális követelmények__:
 
 ## 5. Funckionális terv
 ### 5.1. Rendszerszereplők
+Ebben a programban nincs külön kiemelt felhasználó, mivel méréseket fogunk elvégezni és ezeket tároljuk el. Esetlegesen mindegyik felhasználó magának elmentheti és megtekintheti az általa elvégzett méréseket, ehhez viszont valamilyen felhasználókezelést impementálnunk kell a későbbiekben.
 
 ### 5.2. Rendszerhasználati esetek és lefutásaik
 ![Use-case diagram a használati esetekről](./Pictures/use_case_for_users.jpg)
