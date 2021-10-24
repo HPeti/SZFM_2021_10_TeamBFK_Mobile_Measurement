@@ -98,7 +98,11 @@ Ez a diagram még változhat, ha több műveletet is fel akarunk venni az alkalm
 ### 5.3. Határosztályok
 
 ### 5.4. Menü-hierarchiák
-
+Az alkalmazásban az alábbi menüpontok lettek tervezve:
+* **Mérés**: Itt végezheti el a felhasználó a méréseket.
+* **Információ**: Itt megtekintheti az alkalmazás alap információit és készítőit.
+* (**Mérések megtekintése**: Itt tekinthető meg az eddig elvégzett mérések eredményei, esetleges szűrési opciókkal.)
+* (**Beállítások**: - )
 ### 5.5. Képernyőtervek
 
 Az alap kinézete az alkalmazásunknak:
