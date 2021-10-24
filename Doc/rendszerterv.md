@@ -178,6 +178,9 @@ Szerver felhasználónév, jelszó titkosított tárolása.
 
 ## 9. Adatbázis terv
 ### 9.1. Logikai adatmodell
+![Logikai adatmodell az adatbázisról](./Pictures/database_oracle.jpg)
+
+Normalizálást esetlegesen végre lehet hajtani azzal, hogy külön táblába szedjük szét a telefonok tényleges azonosítóit, amellyel még plusz információkat is le tudunk tárolni a telefonokról, pl. gyártó, modell, egyéni név.
 
 ### 9.2. Tárolt eljárások
 Később készíthetünk fejlesztés céljából PLSQL eljárásokat a szerveren, hogy egyszerűbben tudjuk kezelni a kódon belül a kivételeket.
