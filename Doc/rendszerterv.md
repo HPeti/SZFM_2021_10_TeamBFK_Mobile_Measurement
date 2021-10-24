@@ -111,14 +111,25 @@ A működéséről készült egy [interaktív demo](https://app.uizard.io/p/2c59
 
 ## 6. Fizikai környezet
 ### 6.1. Vásárolt szoftverkomponensek és külső rendszerek
+* Nincs megvásárolt komponensünk.
+* Külső rendszerként a Debreceni Egyetem Oracle alapú adatbázisát használjuk.
 
 ### 6.2. Hardver és hálózati topológia
 
+
 ### 6.3. Fizikai alrendszerek
+* Android alapú operációs rendszerrel ellátott készülékek
 
 ### 6.4. Fejlesztő eszközök
+* Visual Stúdió Code
+* Android Studio
+* SQL developer
+* Google Git
+* UIzard
+* Github
 
 ### 6.5. Keretrendszer
+* Alkalmazás keretrendszer (Oracle Application Development Framework)
 
 ## 7. Absztrakt domain modell
 ### 7.1. Domain specifikációk, fogalmak
@@ -144,6 +155,9 @@ A működéséről készült egy [interaktív demo](https://app.uizard.io/p/2c59
 ### 9.3. Fizikai adatmodellt legeneráló SQL szkript
 
 ## 10. Implementációs terv
+* Az alkalmazásunkat Kotlinban illetve Oracle SQL-ben fogjuk fejleszteni. A szoftvert és az adatbázist online fogjuk összekapcsolni.
+
+![UML a Perzisztencia osztályokról](./Pictures/perzisztencia_uml.png)
 ### 10.1. Perzisztencia-osztályok
 
 ### 10.2. Üzleti logika osztályai
