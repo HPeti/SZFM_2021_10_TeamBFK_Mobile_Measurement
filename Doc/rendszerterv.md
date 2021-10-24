@@ -143,6 +143,9 @@ A működéséről készült egy [interaktív demo](https://app.uizard.io/p/2c59
 ## 7. Absztrakt domain modell
 ### 7.1. Domain specifikációk, fogalmak
 
+Felhasználói interfész: Egy androidos telefon, amelyre telepítve van az alkalmazás.  
+Szerver: Egy adatbázis környezetet futtató rendszer, amelyet távolról el lehet érni az Interneten keresztül.
+
 ### 7.2. Absztrakt komponensek, ezek kapcsolatai
 
 ## 8. Architekturális terv
