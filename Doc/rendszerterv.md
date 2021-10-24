@@ -159,6 +159,10 @@ MVC
 
 ### 8.2. Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai
 
+Modell: Adatbázis
+View: Telefonon ami megjelenik a felhasználó felé. Ezen tud műveletet végezni.
+Controll: Ez köti össze a másik 2 réteget. Az ezek között lévő műveletet és jogosultságokat kezeli. 
+
 ### 8.3. Változások kezelése
 
 ### 8.4. Rendszer bővíthetősége
