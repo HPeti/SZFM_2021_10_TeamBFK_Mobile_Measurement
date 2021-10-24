@@ -1,6 +1,15 @@
 # Mobile Measurement rendszerterv
 
 ## 1. A rendszer célja
+A rendszer célja, hogy egy könnyen átlátható és használható Androidos mobilalkalmazást készítsünk el, amely képes mérések elvégzésére a gyorsulásmérő szenzor segítségével, GPS használata nélkül. A méréseket centis-méteres nagyságrendekbe kell érteni, maximum ~5-10 méterre. A tesztelések során 40cm, 1m, 2m, 5m lesz letesztelve, amelyek alapján megtudhatjuk, hogy mennyire tudunk pontos méréseket csinálni a mobileszközeink segítségével.  
+
+Egy mérést gombok segítségével tudunk elindítani és megállítani, így a véletlen mozgásokat kiszűrjük a mérés végénél és indításánál. Továbbá a teszt időszakig legördülő listából választhatjuk ki a mérni kívánt távolságot, (ennek arányában történik a mintavételezési gyakoriság kiválasztása, vagy külön listába azt is), ezzel valamennyire emelünk a felhasználói élményen ideiglenesen a tesztelési időszak alatt is.  
+
+A mérések után kiírjuk a képernyőn a mért távolságot és esetlegesen többi adatot a mérésről.  
+
+Az összegyűlt mérésekből tudunk ábrákat készíteni, hogy a tesztelt eszközök közül melyik volt pontos vagy pontatlan. Ezeket a méréseket tudjuk csoportosítani több szempontból is, ilyen például a mérni kívánt távolság, mintavételezési gyakoriság, vagy telefon.
+
+Online elérés esetén a méréseket egy központi adatbázisba töltjük fel, viszont ha nincs internet elérés, akkor egy CSV állományba mentjük, melyet később manuálisan vagy automatikusan feltöltünk az adatbázisba.
 
 ## 2. Projekt terv
 ### 2.1. Projektszerepkörök, felelősségek
