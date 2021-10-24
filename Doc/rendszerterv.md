@@ -180,6 +180,7 @@ Szerver felhasználónév, jelszó titkosított tárolása.
 ### 9.1. Logikai adatmodell
 
 ### 9.2. Tárolt eljárások
+Később készíthetünk fejlesztés céljából PLSQL eljárásokat a szerveren, hogy egyszerűbben tudjuk kezelni a kódon belül a kivételeket.
 
 ### 9.3. Fizikai adatmodellt legeneráló SQL szkript
 
