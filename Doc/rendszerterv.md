@@ -173,6 +173,9 @@ Különféle SI mértékegységek használata, amelyek távolság meghatározás
 
 ### 8.5. Biztonsági funkciók
 
+Adatbázis lokális és szerver oldali tárolása.  
+Szerver felhasználónév, jelszó titkosított tárolása.
+
 ## 9. Adatbázis terv
 ### 9.1. Logikai adatmodell
 
