@@ -194,3 +194,19 @@ A működéséről készült egy [interaktív demo](https://app.uizard.io/p/2c59
     * Egy SQL szerver üzemeltetése(tervezett helye: Campuson belül)
 
 ## 13. Karbantartási terv
+
+Általában csak akkor készül el, ha már egy verziót átadtunk és a következő verziót tervezzük.
+
+__A 13. pont módosítási jogát fenntarjuk.__
+
+A szoftver frissítésének esetleges módja:
+* Célszerű lenne feltölteni valamely appstore-ba, hogy az apk frissítésekkel ne legyen nagy gond.
+* Korai verziók megoldása: apk-n keresztül kell kézileg feltelepíteni a készülékekre.
+
+A frissítés esetén szükséges elvégezni:
+* A szerveren lévő állomány frissítése
+* Frissítés dokumentálása
+* Teszteket újboli futtatása
+* Teszteredméynek dokumentálása
+
+
