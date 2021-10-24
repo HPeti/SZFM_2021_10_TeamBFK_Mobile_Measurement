@@ -169,6 +169,8 @@ Controll: Ez köti össze a másik 2 réteget. Az ezek között lévő művelete
 
 ### 8.4. Rendszer bővíthetősége
 
+Különféle SI mértékegységek használata, amelyek távolság meghatározására vannak.
+
 ### 8.5. Biztonsági funkciók
 
 ## 9. Adatbázis terv
