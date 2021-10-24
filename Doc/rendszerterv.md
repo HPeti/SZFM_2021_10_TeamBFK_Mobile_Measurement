@@ -152,6 +152,31 @@ A működéséről készült egy [interaktív demo](https://app.uizard.io/p/2c59
 
 ## 11. Tesztterv
 
+* Tesztesetek:
+    1. Gombok tesztelése
+    2. Szenzorok eredményének tesztelése
+    3. Mérések tesztelése
+    4. Adatbázissal való kapcsolat tesztelése 
+
+* Tesztelési elvek:
+    1. Appium vagy Calabash apptesztelés a későbbiekben
+    2. A fejlesztők letesztelik a app egyes részeit és dokumentálják
+    3. Open beta kiadás (felhasználók visszajelzése/bug report)(opcionális)
+
 ## 12. Telepítési terv
+
+* Kliens oldali rendszerterv:
+    1. Android alapú rendszer
+    2. Szükséges szenzorok:
+        * TYPE_ACCELEROMETER Android 1.5 (API Level 3)
+        * TYPE_GRAVITY Android 2.3 (API Level 9)
+        * TYPE_GYROSCOPE Android 2.3 (API Level 9)
+        * TYPE_LINEAR_ACCELERATION Android 2.3 (API Level 9)
+        * TYPE_ROTATION_VECTOR Android 2.3 (API Level 9) (opcionális)
+    3. Wi-Fi support Android 1.0 (ez csak opcionális, mivel csak a mérések szerverre való logolására szolgálna)
+    4. Beépített vpn, hogy ne csak az egyetem hálózatáról lehessen elérni az szervert.(opcionális) Android 7.0 (API level 24)
+
+* Szerver oldali rendszerterv:
+    * Egy SQL szerver üzemeltetése(tervezett helye: Campuson belül)
 
 ## 13. Karbantartási terv
