@@ -154,6 +154,9 @@ Az Androidos alkalmazás kommunikál a szerverrel az Interneten kreszetül.
 ## 8. Architekturális terv
 ### 8.1. Egy architekturális tervezési minta
 
+MVC
+![Modell View Controll](./Pictures/model-view-controller.jpg)
+
 ### 8.2. Az alkalmazás rétegei, fő komponensei, ezek kapcsolatai
 
 ### 8.3. Változások kezelése
