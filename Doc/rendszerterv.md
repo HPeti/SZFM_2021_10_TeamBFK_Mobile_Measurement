@@ -165,6 +165,8 @@ Controll: Ez köti össze a másik 2 réteget. Az ezek között lévő művelete
 
 ### 8.3. Változások kezelése
 
+Új mérések szinkronizálása a szerverről.
+
 ### 8.4. Rendszer bővíthetősége
 
 ### 8.5. Biztonsági funkciók
