@@ -96,6 +96,10 @@ Ebben a programban nincs külön kiemelt felhasználó, mivel méréseket fogunk
 Ez a diagram még változhat, ha több műveletet is fel akarunk venni az alkalmazáson belülre.
 
 ### 5.3. Határosztályok
+A Model-View-Controller-nek megfelelően 3 alap kategóriába tudjuk besorolni az osztályokat:
+* Model: Ezen osztályok segítségével fogjuk letárolni az adatokat az adatbázisban vagy CSV állományban.
+* View: Ezen osztályok adják meg az alap kinézetét az alkalmazásnak, amellyel a felhasználó tud műveleteket végezni az alkalmazáson belül (beviteli mezők, mérés paraméterei, mérések listázása)
+* Controller: Ezen osztályok határozzák meg az elvégezhető műveleteket az alkalmazásban és ennek megfelelően el is végzi ezeket. Alapvetően ő kezeli a kapcsolatot a Model és a View között.
 
 ### 5.4. Menü-hierarchiák
 Az alkalmazásban az alábbi menüpontok lettek tervezve:
