@@ -183,6 +183,17 @@ Szerver felhasználónév, jelszó titkosított tárolása.
 
 ### 9.3. Fizikai adatmodellt legeneráló SQL szkript
 
+create table SZFM_Mobile_Measurement_meres (
+azon varchar2(50),
+telefon_azon varchar2(40) not null,
+nev varchar2(30),
+datum TIMESTAMP not null,
+vart_ertek smallint not null,
+mert_ertek float(126),
+mintavetelezes int,
+CONSTRAINT meres_pk PRIMARY KEY (azon)
+);
+
 ## 10. Implementációs terv
 * Az alkalmazásunkat Kotlinban illetve Oracle SQL-ben fogjuk fejleszteni. A szoftvert és az adatbázist online fogjuk összekapcsolni.
 
