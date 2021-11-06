@@ -28,12 +28,29 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         navView.setNavigationItemSelectedListener{
+            it.isChecked = true
+
             when(it.itemId){
-                R.id.menu_home_item -> Toast.makeText(applicationContext, "Főoldal menüpont kiválasztva", Toast.LENGTH_SHORT).show()
-                R.id.menu_measure_item -> Toast.makeText(applicationContext, "Mérés menüpont kiválasztva", Toast.LENGTH_SHORT).show()
-                R.id.menu_results_item -> Toast.makeText(applicationContext, "Mérés eredményei menüpont kiválasztva", Toast.LENGTH_SHORT).show()
-                R.id.menu_options_item -> Toast.makeText(applicationContext, "Beállítások menüpont kiválasztva", Toast.LENGTH_SHORT).show()
-                R.id.menu_info_item -> Toast.makeText(applicationContext, "Információ menüpont kiválasztva", Toast.LENGTH_SHORT).show()
+                R.id.menu_home_item -> {
+                    //Toast.makeText(applicationContext, "Főoldal menüpont kiválasztva", Toast.LENGTH_SHORT).show()
+                    replaceFragment(HomeFragment(), it.title.toString())
+                }
+                R.id.menu_measure_item -> {
+                    //Toast.makeText(applicationContext, "Mérés menüpont kiválasztva", Toast.LENGTH_SHORT).show()
+                    replaceFragment(MeasureFragment(), it.title.toString())
+                }
+                R.id.menu_results_item -> {
+                    //Toast.makeText(applicationContext, "Mérés eredményei menüpont kiválasztva", Toast.LENGTH_SHORT).show()
+                    replaceFragment(ResultsFragment(), it.title.toString())
+                }
+                R.id.menu_options_item -> {
+                    //Toast.makeText(applicationContext, "Beállítások menüpont kiválasztva", Toast.LENGTH_SHORT).show()
+                    replaceFragment(OptionsFragment(), it.title.toString())
+                }
+                R.id.menu_info_item -> {
+                    //Toast.makeText(applicationContext, "Információ menüpont kiválasztva", Toast.LENGTH_SHORT).show()
+                    replaceFragment(InfoFragment(), it.title.toString())
+                }
             }
             true
         }
@@ -43,6 +60,9 @@ class MainActivity : AppCompatActivity() {
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.frameLayout, fragment)
         fragmentTransaction.commit()
+        setTitle(title)
+        drawerLayout.closeDrawers()
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
