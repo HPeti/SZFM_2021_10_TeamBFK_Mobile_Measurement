@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_home_item"
+        android:title="Főoldal"/>
+
+    <item
+        android:id="@+id/menu_measure_item"
+        android:title="Mérés"/>
+
+    <item
+        android:id="@+id/menu_results_item"
+        android:title="Mérési eredmények"/>
+
+    <item
+        android:id="@+id/menu_options_item"
+        android:title="Beállítások"/>
+
+    <item
+        android:id="@+id/menu_info_item"
+        android:title="Információ"/>
+
+</menu>
