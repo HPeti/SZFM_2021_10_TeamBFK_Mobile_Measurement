@@ -3,22 +3,27 @@
 
     <item
         android:id="@+id/menu_home_item"
-        android:title="Főoldal"/>
+        android:title="Főoldal"
+        android:icon="@drawable/home_icon"/>
 
     <item
         android:id="@+id/menu_measure_item"
-        android:title="Mérés"/>
+        android:title="Mérés"
+        android:icon="@drawable/measure_icon"/>
 
     <item
         android:id="@+id/menu_results_item"
-        android:title="Mérési eredmények"/>
+        android:title="Mérési eredmények"
+        android:icon="@drawable/results_icon"/>
 
     <item
         android:id="@+id/menu_options_item"
-        android:title="Beállítások"/>
+        android:title="Beállítások"
+        android:icon="@drawable/settings_icon"/>
 
     <item
         android:id="@+id/menu_info_item"
-        android:title="Információ"/>
+        android:title="Információ"
+        android:icon="@drawable/info_icon"/>
 
 </menu>
