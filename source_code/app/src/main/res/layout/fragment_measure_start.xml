@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MeasureFragment">
+    tools:context=".MeasureStartFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -26,11 +26,11 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/start_Button"
+            android:id="@+id/Next_Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="Start"
+            android:text="Next"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -41,11 +41,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
-            android:orientation="horizontal">
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
 
             <RadioButton
                 android:id="@+id/distance_40cm"
@@ -97,8 +97,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:hint="ID"/>
+                android:hint="ID"
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
@@ -171,6 +171,42 @@
 
             </RadioGroup>
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Telefon Orientációja:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        <RadioGroup
+            android:id="@+id/orientation_Radio_Group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/vertical_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vízszintes" />
+
+            <RadioButton
+                android:id="@+id/horizontal_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Függőleges" />
+        </RadioGroup>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
