@@ -34,7 +34,7 @@ class MeasureFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_measure, container, false)
+        return inflater.inflate(R.layout.fragment_measure_start, container, false)
     }
 
     companion object {
