@@ -3,7 +3,6 @@ package hu.unideb.inf.mobilemeasurement
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
@@ -41,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.menu_measure_item -> {
                     //Toast.makeText(applicationContext, "Mérés menüpont kiválasztva", Toast.LENGTH_SHORT).show()
-                    replaceFragment(MeasureFragment(), it.title.toString())
+                    replaceFragment(MeasureStartFragment(), it.title.toString())
                 }
                 R.id.menu_results_item -> {
                     //Toast.makeText(applicationContext, "Mérés eredményei menüpont kiválasztva", Toast.LENGTH_SHORT).show()

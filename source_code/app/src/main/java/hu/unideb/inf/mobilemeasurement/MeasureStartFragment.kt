@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioGroup
 
-class MeasureFragment : Fragment() {
+class MeasureStartFragment : Fragment() {
 
     lateinit var distanceRadioGroup : RadioGroup
     lateinit var samplingRadioGroup: RadioGroup
