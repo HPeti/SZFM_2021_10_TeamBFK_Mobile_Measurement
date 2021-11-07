@@ -2,7 +2,7 @@
     <string name="app_name">SZFM Mobile Measurement</string>
     <string name="open">Menu opened</string>
     <string name="close">Menu closed</string>
-    <string name="infoText">Ez az alkalmazás azt a célt szolgálja, hogy a felhasználó távolságot tudjon mérni a mobiltelefonjával. A mérés pontossága érdekében kérjük, hogy igyekezzen lehetőségek szerint egy irányba mozgatni a telefont, minél kevesebb hibával.</string>
+    <string name="homeText">Ez az alkalmazás azt a célt szolgálja, hogy a felhasználó távolságot tudjon mérni a mobiltelefonjával. A mérés pontossága érdekében kérjük, hogy igyekezzen lehetőségek szerint egy irányba mozgatni a telefont, minél kevesebb hibával.</string>
     <string name="startMeasure">Mérés indítása</string>
     <string name="info">infoIcon</string>
     <string name="welcome">Üdvözlünk az alkalmazásban!</string>
@@ -11,9 +11,9 @@
     <string name="version_number">0.0.1</string>
     <string name="copyright">\@TeamBFK 2021</string>
     <string name="authors">Fejlesztők:  \n
+                            Halász Dániel \n
                             Hegedűs Péter \n
                             Káplár István \n
-                            Halász Dániel \n
                             Nyika Benedek \n
                             Sápi Gábor</string>
 </resources>
