@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         //Default fragment is the HomeFragment
         replaceFragment(HomeFragment(), getString(R.string.app_name))
+        navView.setCheckedItem(R.id.menu_home_item)
 
         navView.setNavigationItemSelectedListener{
             it.isChecked = true
