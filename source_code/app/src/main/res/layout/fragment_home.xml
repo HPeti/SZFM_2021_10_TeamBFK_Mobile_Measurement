@@ -51,7 +51,7 @@
             android:fontFamily="sans-serif-condensed-medium"
             android:paddingLeft="20sp"
             android:paddingRight="20sp"
-            android:text="@string/infoText"
+            android:text="@string/homeText"
             android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/button"
             app:layout_constraintEnd_toEndOf="parent"
