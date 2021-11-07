@@ -44,37 +44,32 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4">
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/distance_40cm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40cm" />
 
-                <RadioButton
-                    android:id="@+id/distance_40cm"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="40cm" />
+            <RadioButton
+                android:id="@+id/distance_1m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1m" />
 
-                <RadioButton
-                    android:id="@+id/distance_1m"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1m" />
+            <RadioButton
+                android:id="@+id/distance_2m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2m" />
 
-                <RadioButton
-                    android:id="@+id/distance_2m"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="2m" />
-
-                <RadioButton
-                    android:id="@+id/distance_5m"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="5m" />
-            </LinearLayout>
+            <RadioButton
+                android:id="@+id/distance_5m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5m" />
 
         </RadioGroup>
 
@@ -103,7 +98,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="ID" />
+                android:hint="ID"/>
         </LinearLayout>
 
         <LinearLayout
@@ -159,25 +154,20 @@
             <RadioGroup
                 android:id="@+id/sampling_Radio_Group"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-                <LinearLayout
+                <RadioButton
+                    android:id="@+id/sampling_A"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:text="A" />
 
-                    <RadioButton
-                        android:id="@+id/sampling_A"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="A" />
-
-                    <RadioButton
-                        android:id="@+id/sampling_B"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="B" />
-                </LinearLayout>
+                <RadioButton
+                    android:id="@+id/sampling_B"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B" />
 
             </RadioGroup>
         </LinearLayout>
