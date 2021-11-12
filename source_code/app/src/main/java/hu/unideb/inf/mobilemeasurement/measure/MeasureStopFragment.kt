@@ -19,7 +19,7 @@ class MeasureStopFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        var myView = inflater.inflate(R.layout.fragment_measure_start, container, false)
+        var myView = inflater.inflate(R.layout.fragment_measure_stop, container, false)
         return myView
     }
 }

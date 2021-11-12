@@ -3,10 +3,42 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment2">
+    app:startDestination="@id/homeFragment">
     <fragment
-        android:id="@+id/homeFragment2"
+        android:id="@+id/homeFragment"
         android:name="hu.unideb.inf.mobilemeasurement.home.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_measureStartFragment"
+            app:destination="@id/measureStartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/measureStartFragment"
+        android:name="hu.unideb.inf.mobilemeasurement.measure.MeasureStartFragment"
+        android:label="fragment_measure_start"
+        tools:layout="@layout/fragment_measure_start" >
+        <action
+            android:id="@+id/action_measureStartFragment_to_measureStopFragment"
+            app:destination="@id/measureStopFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/measureStopFragment"
+        android:name="hu.unideb.inf.mobilemeasurement.measure.MeasureStopFragment"
+        android:label="MeasureStopFragment" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="hu.unideb.inf.mobilemeasurement.info.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="hu.unideb.inf.mobilemeasurement.results.ResultsFragment"
+        android:label="fragment_results"
+        tools:layout="@layout/fragment_results" />
+    <fragment
+        android:id="@+id/optionsFragment"
+        android:name="hu.unideb.inf.mobilemeasurement.options.OptionsFragment"
+        android:label="fragment_options"
+        tools:layout="@layout/fragment_options" />
 </navigation>
