@@ -7,6 +7,11 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
+import hu.unideb.inf.mobilemeasurement.home.HomeFragment
+import hu.unideb.inf.mobilemeasurement.info.InfoFragment
+import hu.unideb.inf.mobilemeasurement.measure.MeasureStartFragment
+import hu.unideb.inf.mobilemeasurement.options.OptionsFragment
+import hu.unideb.inf.mobilemeasurement.results.ResultsFragment
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,11 +1,11 @@
-package hu.unideb.inf.mobilemeasurement
+package hu.unideb.inf.mobilemeasurement.measure
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.RadioGroup
+import hu.unideb.inf.mobilemeasurement.R
 
 class MeasureStopFragment : Fragment() {
 
