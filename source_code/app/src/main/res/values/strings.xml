@@ -10,6 +10,23 @@
     <string name="version">Verziószám:</string>
     <string name="version_number">0.0.1</string>
     <string name="copyright">\@TeamBFK 2021</string>
+    <string name="measureDistanceText">Mérni kívánt távolság:</string>
+    <string name="distance1">40cm</string>
+    <string name="distance2">1m</string>
+    <string name="distance3">2m</string>
+    <string name="distance4">5m</string>
+    <string name="Next">Következő</string>
+    <string name="measureID">Mérés ID:</string>
+    <string name="measureIDHint">ID</string>
+    <string name="telID">Telefon ID:</string>
+    <string name="telIDHint">telID</string>
+    <string name="example">Mintavételezés:</string>
+    <string name="orientation">Telefon Orientációja:</string>
+    <string name="horizontal">Vízszintes</string>
+    <string name="vertical">Függőleges</string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+
     <string name="authors">Fejlesztők:  \n
                             Halász Dániel \n
                             Hegedűs Péter \n
