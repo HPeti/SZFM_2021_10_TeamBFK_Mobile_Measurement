@@ -100,9 +100,8 @@
                 android:height="48dp"
                 android:ems="10"
                 android:hint="@string/measureIDHint"
-                android:hintTextColor="#757575"
                 android:inputType="textPersonName"
-                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
+                tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
 
         <LinearLayout
