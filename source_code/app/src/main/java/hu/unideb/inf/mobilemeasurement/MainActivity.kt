@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
     private fun replaceFragment(fragment: Fragment, title : String){
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frameLayout, fragment)
+        fragmentTransaction.replace(R.id.nav_host_fragment, fragment)
         fragmentTransaction.commit()
         setTitle(title)
         drawerLayout.closeDrawers()
