@@ -22,7 +22,7 @@ class MeasureStartFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        var myView = inflater.inflate(R.layout.fragment_measure_start_old2, container, false)
+        var myView = inflater.inflate(R.layout.fragment_measure_start, container, false)
         distanceRadioGroup = myView.findViewById<RadioGroup>(R.id.distance_Radio_Group)
         return myView
     }
