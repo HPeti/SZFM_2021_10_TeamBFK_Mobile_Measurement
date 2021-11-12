@@ -18,7 +18,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="241dp"
-            android:text="Mérni kívánt távolság:"
+            android:text="@string/measureDistanceText"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="Next"
+            android:text="@string/Next"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -51,25 +51,25 @@
                 android:id="@+id/distance_40cm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="40cm" />
+                android:text="@string/distance1" />
 
             <RadioButton
                 android:id="@+id/distance_1m"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1m" />
+                android:text="@string/distance2" />
 
             <RadioButton
                 android:id="@+id/distance_2m"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2m" />
+                android:text="@string/distance3" />
 
             <RadioButton
                 android:id="@+id/distance_5m"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="5m" />
+                android:text="@string/distance4" />
 
         </RadioGroup>
 
@@ -87,18 +87,21 @@
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Mérés ID: "
+                android:text="@string/measureID"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/measure_ID_Input"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:height="48dp"
                 android:ems="10"
-                android:hint="ID"
-                android:inputType="textPersonName" />
+                android:hint="@string/measureIDHint"
+                android:hintTextColor="#757575"
+                android:inputType="textPersonName"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,TextContrastCheck" />
         </LinearLayout>
 
         <LinearLayout
@@ -116,7 +119,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Telefon ID:"
+                android:text="@string/telID"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -125,7 +128,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="telID" />
+                android:text="@string/telIDHint" />
         </LinearLayout>
 
         <TextView
@@ -134,7 +137,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
-            android:text="Mintavételezés:"
+            android:text="@string/example"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -161,13 +164,13 @@
                     android:id="@+id/sampling_A"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="A" />
+                    android:text="@string/A" />
 
                 <RadioButton
                     android:id="@+id/sampling_B"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="B" />
+                    android:text="@string/B" />
 
             </RadioGroup>
         </LinearLayout>
@@ -178,7 +181,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
-            android:text="Telefon Orientációja:"
+            android:text="@string/orientation"
             android:textSize="16sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -199,13 +202,13 @@
                 android:id="@+id/vertical_Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Vízszintes" />
+                android:text="@string/horizontal" />
 
             <RadioButton
                 android:id="@+id/horizontal_Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Függőleges" />
+                android:text="@string/vertical" />
         </RadioGroup>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
