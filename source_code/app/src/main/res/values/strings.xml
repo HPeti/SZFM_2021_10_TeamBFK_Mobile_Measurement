@@ -26,7 +26,11 @@
     <string name="vertical">Függőleges</string>
     <string name="A">A</string>
     <string name="B">B</string>
-
+    <string name="imageViewContentDescription">This is the schema of the application.</string>
+    <string name="Result">Results fragment</string>
+    <string name="Start">Start</string>
+    <string name="Stop">Stop</string>
+    <string name="Restart">Restart</string>
     <string name="authors">Fejlesztők:  \n
                             Halász Dániel \n
                             Hegedűs Péter \n
