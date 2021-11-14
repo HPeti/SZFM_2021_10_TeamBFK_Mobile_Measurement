@@ -6,7 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import hu.unideb.inf.mobilemeasurement.R
+import hu.unideb.inf.mobilemeasurement.databinding.FragmentHomeBinding
+import hu.unideb.inf.mobilemeasurement.databinding.FragmentMeasureStartBinding
+import hu.unideb.inf.mobilemeasurement.home.HomeFragmentDirections
 
 class MeasureStartFragment : Fragment() {
 
@@ -21,9 +26,19 @@ class MeasureStartFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        var myView = inflater.inflate(R.layout.fragment_measure_start, container, false)
-        distanceRadioGroup = myView.findViewById<RadioGroup>(R.id.distance_Radio_Group)
-        return myView
+
+        val binding = DataBindingUtil.inflate<FragmentMeasureStartBinding>(
+            inflater,
+            R.layout.fragment_measure_start,
+            container,
+            false
+        )
+        binding.NextButton.setOnClickListener{ view ->
+            view.findNavController().navigate(MeasureStartFragmentDirections.actionMeasureStartFragmentToMeasureStopFragment())
+
+        }
+        return binding.root
+
+        //distanceRadioGroup = myView.findViewById<RadioGroup>(R.id.distance_Radio_Group)
     }
 }
