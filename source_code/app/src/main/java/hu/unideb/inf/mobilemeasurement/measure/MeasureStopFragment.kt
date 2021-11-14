@@ -5,7 +5,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import hu.unideb.inf.mobilemeasurement.R
+import hu.unideb.inf.mobilemeasurement.databinding.FragmentMeasureStartBinding
+import hu.unideb.inf.mobilemeasurement.databinding.FragmentMeasureStopBinding
 
 class MeasureStopFragment : Fragment() {
 
@@ -18,8 +22,17 @@ class MeasureStopFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        var myView = inflater.inflate(R.layout.fragment_measure_stop, container, false)
-        return myView
+        val binding = DataBindingUtil.inflate<FragmentMeasureStopBinding>(
+            inflater,
+            R.layout.fragment_measure_stop,
+            container,
+            false
+        )
+        /*
+        binding.NextButton.setOnClickListener{ view ->
+            view.findNavController().navigate(MeasureStartFragmentDirections.actionMeasureStartFragmentToMeasureStopFragment())
+
+        }*/
+        return binding.root
     }
 }
