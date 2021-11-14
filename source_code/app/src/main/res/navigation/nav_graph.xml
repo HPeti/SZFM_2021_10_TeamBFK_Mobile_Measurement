@@ -21,7 +21,15 @@
         android:id="@+id/measureStartFragment"
         android:name="hu.unideb.inf.mobilemeasurement.measure.MeasureStartFragment"
         android:label="fragment_measure_start"
-        tools:layout="@layout/fragment_measure_start" />
+        tools:layout="@layout/fragment_measure_start" >
+        <action
+            android:id="@+id/action_measureStartFragment_to_measureStopFragment"
+            app:destination="@id/measureStopFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
     <fragment
         android:id="@+id/measureStopFragment"
         android:name="hu.unideb.inf.mobilemeasurement.measure.MeasureStopFragment"
