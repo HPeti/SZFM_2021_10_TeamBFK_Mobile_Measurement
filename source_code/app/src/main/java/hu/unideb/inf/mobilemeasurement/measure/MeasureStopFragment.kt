@@ -27,6 +27,11 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
     private lateinit var x_value: TextView
     private lateinit var y_value: TextView
     private lateinit var z_value: TextView
+    private lateinit var timeText: TextView
+    private lateinit var deltaTimeText: TextView
+    private var deltaT : Long = 0L
+    private var xDistance : Double = 0.0
+    private lateinit var xDistanceText: TextView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,6 +52,9 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
         x_value = binding.xText
         y_value = binding.yText
         z_value = binding.zText
+        timeText = binding.timeText
+        deltaTimeText = binding.deltaTimeText
+        xDistanceText = binding.xDistanceText
         return binding.root
     }
 
@@ -62,14 +70,27 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
 
     override fun onSensorChanged(event: SensorEvent?) {
         if (event?.sensor?.type == Sensor.TYPE_LINEAR_ACCELERATION) {
-            x_value.setText("X: " + event.values[0])
-            y_value.setText("Y: " + event.values[1])
-            z_value.setText("Z: " + event.values[2])
+            if(deltaT != 0L){
+                x_value.setText("X: " + event.values[0])
+                y_value.setText("Y: " + event.values[1])
+                z_value.setText("Z: " + event.values[2])
+                timeText.setText("Timestamp: " + event.timestamp / 10000000 )
+                deltaT = (event.timestamp - deltaT) / 10000000
+                deltaTimeText.setText("delta time: "+ deltaT + "ms")
+            }
+            deltaT = event.timestamp
+            xDistance += 1/2 * event.values[2] * ((deltaT*1000) * (deltaT*1000))
+            xDistanceText.setText("X distance: " + xDistance + " méter")
         }
 
     }
 
     override fun onAccuracyChanged(p0: Sensor?, p1: Int) {
         return
+    }
+
+    override fun onDestroy() {
+        sensorManager.unregisterListener(this)
+        super.onDestroy()
     }
 }
