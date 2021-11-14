@@ -4,9 +4,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 import com.google.android.material.navigation.NavigationView
+import hu.unideb.inf.mobilemeasurement.databinding.ActivityMainBinding
 import hu.unideb.inf.mobilemeasurement.home.HomeFragment
 import hu.unideb.inf.mobilemeasurement.info.InfoFragment
 import hu.unideb.inf.mobilemeasurement.measure.MeasureStartFragment
@@ -15,68 +20,21 @@ import hu.unideb.inf.mobilemeasurement.results.ResultsFragment
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var toggle: ActionBarDrawerToggle
+    //lateinit var toggle: ActionBarDrawerToggle
     lateinit var drawerLayout: DrawerLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this,R.layout.activity_main)
+        drawerLayout = binding.drawerLayout
 
-        drawerLayout = findViewById<DrawerLayout>(R.id.drawerLayout)
-        val navView = findViewById<NavigationView>(R.id.navView)
-
-        toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
-        drawerLayout.addDrawerListener(toggle)
-        toggle.syncState()
-
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-        //Default fragment is the HomeFragment
-        replaceFragment(HomeFragment(), getString(R.string.app_name))
-        navView.setCheckedItem(R.id.menu_home_item)
-
-        navView.setNavigationItemSelectedListener{
-            it.isChecked = true
-
-            when(it.itemId){
-                R.id.menu_home_item -> {
-                    //Toast.makeText(applicationContext, "Főoldal menüpont kiválasztva", Toast.LENGTH_SHORT).show()
-                    replaceFragment(HomeFragment(), it.title.toString())
-                }
-                R.id.menu_measure_item -> {
-                    //Toast.makeText(applicationContext, "Mérés menüpont kiválasztva", Toast.LENGTH_SHORT).show()
-                    replaceFragment(MeasureStartFragment(), it.title.toString())
-                }
-                R.id.menu_results_item -> {
-                    //Toast.makeText(applicationContext, "Mérés eredményei menüpont kiválasztva", Toast.LENGTH_SHORT).show()
-                    replaceFragment(ResultsFragment(), it.title.toString())
-                }
-                R.id.menu_options_item -> {
-                    //Toast.makeText(applicationContext, "Beállítások menüpont kiválasztva", Toast.LENGTH_SHORT).show()
-                    replaceFragment(OptionsFragment(), it.title.toString())
-                }
-                R.id.menu_info_item -> {
-                    //Toast.makeText(applicationContext, "Információ menüpont kiválasztva", Toast.LENGTH_SHORT).show()
-                    replaceFragment(InfoFragment(), it.title.toString())
-                }
-            }
-            true
-        }
-    }
-    private fun replaceFragment(fragment: Fragment, title : String){
-        val fragmentManager = supportFragmentManager
-        val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.nav_host_fragment, fragment)
-        fragmentTransaction.commit()
-        setTitle(title)
-        drawerLayout.closeDrawers()
-
+        val navController = this.findNavController(R.id.nav_host_fragment)
+        NavigationUI.setupActionBarWithNavController(this, navController, drawerLayout)
+        NavigationUI.setupWithNavController(binding.navView, navController)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if(toggle.onOptionsItemSelected(item)){
-            return true
-        }
-        return super.onOptionsItemSelected(item)
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = this.findNavController(R.id.nav_host_fragment)
+        return NavigationUI.navigateUp(navController, drawerLayout)
     }
 }
