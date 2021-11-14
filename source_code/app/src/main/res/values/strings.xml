@@ -31,6 +31,10 @@
     <string name="Start">Start</string>
     <string name="Stop">Stop</string>
     <string name="Restart">Restart</string>
+    <string name="measureNumber">Mérés Száma </string>
+    <string name="Example">example</string>
+    <string name="Night_mode">Night mode</string>
+    <string name="deleteMeasure">Mérések törlése</string>
     <string name="authors">Fejlesztők:  \n
                             Halász Dániel \n
                             Hegedűs Péter \n
