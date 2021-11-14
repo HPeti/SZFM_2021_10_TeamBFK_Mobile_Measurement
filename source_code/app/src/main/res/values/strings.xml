@@ -35,6 +35,7 @@
     <string name="Example">example</string>
     <string name="Night_mode">Night mode</string>
     <string name="deleteMeasure">Mérések törlése</string>
+    <string name="sampleAccelerometerData">X: 0.00000123 (sample)</string>
     <string name="authors">Fejlesztők:  \n
                             Halász Dániel \n
                             Hegedűs Péter \n
