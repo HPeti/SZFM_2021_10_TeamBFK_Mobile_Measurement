@@ -101,7 +101,8 @@
                 android:ems="10"
                 android:hint="@string/measureIDHint"
                 android:inputType="textPersonName"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck"
+                android:autofillHints="" />
         </LinearLayout>
 
         <LinearLayout
