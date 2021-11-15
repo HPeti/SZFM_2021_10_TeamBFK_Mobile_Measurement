@@ -15,6 +15,8 @@ import hu.unideb.inf.mobilemeasurement.databinding.FragmentHomeBinding
 import hu.unideb.inf.mobilemeasurement.databinding.FragmentMeasureStartBinding
 import hu.unideb.inf.mobilemeasurement.home.HomeFragmentDirections
 import android.widget.Toast
+import androidx.lifecycle.Observer
+import com.google.android.material.snackbar.Snackbar
 
 import hu.unideb.inf.mobilemeasurement.MainActivity
 
@@ -53,13 +55,27 @@ class MeasureStartFragment : Fragment() {
 
         viewModel = ViewModelProvider(this).get(MeasureStartViewModel::class.java)
 
+
+
         distanceRadioGroup.setOnCheckedChangeListener { group, checkedId ->
             when (checkedId) {
-                binding.distance40cm.id -> viewModel.distance.value = 40
+                binding.distance40cm.id -> {
+                    viewModel.distance.value = 40
+                    viewModel.showSnackBar.observe(viewLifecycleOwner, Observer {
+                        if (it == true) {
+                            Snackbar.make(
+                                requireActivity().findViewById(android.R.id.content),
+                                getString(R.string.distance1),
+                                Snackbar.LENGTH_LONG
+                            ).show()
+                            viewModel.doneShowingSnackBar()
+                    }
+                })}
                 binding.distance1m.id -> viewModel.distance.value = 100
                 binding.distance2m.id -> viewModel.distance.value = 200
                 binding.distance5m.id -> viewModel.distance.value = 500
-            }
+
+        }
         }
 
         samplingRadioGroup.setOnCheckedChangeListener { group, checkedId ->
