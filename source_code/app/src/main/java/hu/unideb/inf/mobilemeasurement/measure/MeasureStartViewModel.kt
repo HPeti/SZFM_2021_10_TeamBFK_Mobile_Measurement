@@ -1,6 +1,5 @@
 package hu.unideb.inf.mobilemeasurement.measure
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
@@ -26,12 +25,5 @@ class MeasureStartViewModel : ViewModel(){
         MutableLiveData<Int>()
     }
 
-    private var _showSnackBarEvent = MutableLiveData<Boolean>()
-    val showSnackBar: LiveData<Boolean>
-        get() = _showSnackBarEvent
-
-    fun doneShowingSnackBar() {
-        _showSnackBarEvent.value = false
-    }
 
 }
