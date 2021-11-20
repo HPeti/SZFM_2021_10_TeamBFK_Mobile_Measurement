@@ -27,5 +27,10 @@
             android:title="Információ"
             android:icon="@drawable/info_icon"/>
     </group>
+    <group>
+        <item
+            android:id="@+id/databaseFragment"
+            android:title="Adatbázis Tesztelés"/>
+    </group>
 
 </menu>
