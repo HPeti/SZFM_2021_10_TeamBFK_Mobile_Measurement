@@ -49,4 +49,8 @@
         android:name="hu.unideb.inf.mobilemeasurement.options.OptionsFragment"
         android:label="fragment_options"
         tools:layout="@layout/fragment_options" />
+    <fragment
+        android:id="@+id/databaseFragment"
+        android:name="hu.unideb.inf.mobilemeasurement.database.databaseFragment"
+        android:label="databaseFragment" />
 </navigation>
