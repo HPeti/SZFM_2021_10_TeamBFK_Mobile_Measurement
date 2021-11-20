@@ -36,6 +36,10 @@
     <string name="Night_mode">Night mode</string>
     <string name="deleteMeasure">Mérések törlése</string>
     <string name="sampleAccelerometerData">X: 0.00000123 (sample)</string>
+    <string name="Username">Felhasználónév</string>
+    <string name="Password">jelszó</string>
+    <string name="Connect">Kapcsolódás</string>
+    <string name="DBtext">Database text</string>
     <string name="authors">Fejlesztők:  \n
                             Halász Dániel \n
                             Hegedűs Péter \n
