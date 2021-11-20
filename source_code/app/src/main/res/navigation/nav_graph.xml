@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="hu.unideb.inf.mobilemeasurement.home.HomeFragment"
-        android:label="fragment_home"
+        android:label="Kezdőoldal"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_measureStartFragment"
@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/measureStartFragment"
         android:name="hu.unideb.inf.mobilemeasurement.measure.MeasureStartFragment"
-        android:label="fragment_measure_start"
+        android:label="Mérés indítása"
         tools:layout="@layout/fragment_measure_start" >
         <action
             android:id="@+id/action_measureStartFragment_to_measureStopFragment"
@@ -33,24 +33,24 @@
     <fragment
         android:id="@+id/measureStopFragment"
         android:name="hu.unideb.inf.mobilemeasurement.measure.MeasureStopFragment"
-        android:label="MeasureStopFragment" />
+        android:label="Mérés leállítása" />
     <fragment
         android:id="@+id/infoFragment"
         android:name="hu.unideb.inf.mobilemeasurement.info.InfoFragment"
-        android:label="fragment_info"
+        android:label="Információ"
         tools:layout="@layout/fragment_info" />
     <fragment
         android:id="@+id/resultsFragment"
         android:name="hu.unideb.inf.mobilemeasurement.results.ResultsFragment"
-        android:label="fragment_results"
+        android:label="Eredmények"
         tools:layout="@layout/fragment_results" />
     <fragment
         android:id="@+id/optionsFragment"
         android:name="hu.unideb.inf.mobilemeasurement.options.OptionsFragment"
-        android:label="fragment_options"
+        android:label="Beállítások"
         tools:layout="@layout/fragment_options" />
     <fragment
         android:id="@+id/databaseFragment"
         android:name="hu.unideb.inf.mobilemeasurement.database.databaseFragment"
-        android:label="databaseFragment" />
+        android:label="Adatbázis" />
 </navigation>
