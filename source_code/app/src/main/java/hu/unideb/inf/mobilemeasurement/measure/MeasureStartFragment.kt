@@ -1,5 +1,6 @@
 package hu.unideb.inf.mobilemeasurement.measure
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -81,8 +82,22 @@ class MeasureStartFragment : Fragment() {
 
         binding.NextButton.setOnClickListener{ view ->
 
-            view.findNavController().navigate(MeasureStartFragmentDirections.actionMeasureStartFragmentToMeasureStopFragment())
-
+            if (distanceRadioGroup.checkedRadioButtonId == -1)
+            {
+                Toast.makeText(activity?.applicationContext, "Nem választotta ki a távolságot", Toast.LENGTH_SHORT).show();
+            }
+            else if(samplingRadioGroup.checkedRadioButtonId == -1)
+            {
+                Toast.makeText(activity?.applicationContext, "Nem választotta ki a mintavételezés fajtáját", Toast.LENGTH_SHORT).show();
+            }
+            else if(orientationRadioGroup.checkedRadioButtonId == -1)
+            {
+                Toast.makeText(activity?.applicationContext, "Nem választotta ki a telefon orientációját", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                view.findNavController()
+                    .navigate(MeasureStartFragmentDirections.actionMeasureStartFragmentToMeasureStopFragment())
+            }
         }
         return binding.root
 
