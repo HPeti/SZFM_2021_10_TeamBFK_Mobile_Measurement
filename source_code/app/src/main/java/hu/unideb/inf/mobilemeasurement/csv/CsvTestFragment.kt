@@ -1,7 +1,6 @@
 package hu.unideb.inf.mobilemeasurement.csv
 
 import android.os.Bundle
-import android.os.Environment
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -13,9 +12,7 @@ import androidx.databinding.DataBindingUtil
 import hu.unideb.inf.mobilemeasurement.R
 import hu.unideb.inf.mobilemeasurement.databinding.FragmentCsvTestBinding
 import java.io.File
-import java.io.FileOutputStream
-import java.io.FileWriter
-import java.nio.charset.Charset
+
 
 class CsvTestFragment : Fragment() {
 
@@ -68,6 +65,19 @@ class CsvTestFragment : Fragment() {
             }
         }
 
+        buttonRead.setOnClickListener{
+            val path = context?.getExternalFilesDir(null)
+
+            val csvsDirectory = File(path, "csvs")
+            csvsDirectory.mkdirs()
+
+            val file = File(csvsDirectory,"csv_test_output.csv")
+            var input = file.readLines()
+            textviewOutput.text = ""
+            for (item in input) {
+                textviewOutput.append(item+"\n")
+            }
+        }
         return binding.root
     }
 }
