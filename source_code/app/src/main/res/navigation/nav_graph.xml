@@ -53,4 +53,8 @@
         android:id="@+id/databaseFragment"
         android:name="hu.unideb.inf.mobilemeasurement.database.databaseFragment"
         android:label="Adatbázis" />
+    <fragment
+        android:id="@+id/csvTestFragment"
+        android:name="hu.unideb.inf.mobilemeasurement.csv.CsvTestFragment"
+        android:label="CsvTestFragment" />
 </navigation>
