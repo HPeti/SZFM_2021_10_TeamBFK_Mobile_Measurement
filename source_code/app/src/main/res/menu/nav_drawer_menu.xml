@@ -31,6 +31,9 @@
         <item
             android:id="@+id/databaseFragment"
             android:title="Adatbázis Tesztelés"/>
+        <item
+            android:id="@+id/csvTestFragment"
+            android:title="Csv Tesztelés"/>
     </group>
 
 </menu>
