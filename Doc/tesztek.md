@@ -1,4 +1,4 @@
-# Tesztelési jegyzőkönyv a számtan gyakorló oldalhoz
+# Tesztelési jegyzőkönyv Mobile Measurement androidos alkalmazáshoz
 
 Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt bővítjük a listát!):
 * Samsung Galaxy A70 - Android 11 ([HPeti](https://github.com/HPeti))
@@ -68,7 +68,7 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
 **Android verziója**:           Android 11 (Honeycomb)  
 **Tesztelt komponens leírása**: Night mode működése  
-**Várt eredmény**:              A Night mode kapcsoló átkapcsol világos és sötét téma között
+**Várt eredmény**:              A Night mode kapcsoló átkapcsol világos és sötét téma között  
 **Kapott eredmény**:            A gomb megnyomása után az applikáció betölti a sötét és világos módot is, miután ráfrissített az alkalmazás kinézetére &#9989;  
 
 ---
