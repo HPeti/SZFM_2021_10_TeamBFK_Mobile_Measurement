@@ -75,9 +75,29 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ## Információ (InfoFragment)
 
+
+**Tesztelést elvégezte**:       [HPeti](https://github.com/HPeti)  
+**App verziója**:               v0.0.3  
+**Tesztelés ideje**:            2021. 11. 27. 15:03  
+**Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
+**Android verziója**:           Android 11 (Honeycomb)  
+**Tesztelt komponens leírása**: Verzió szám megjelenése  
+**Várt eredmény**:              A jelenlegi verziószám jól megjelenik az információs oldalon is.  
+**Kapott eredmény**:            Megjelent a v0.0.3 verziószám az oldalon. &#9989;  
+
 ---
 
 ## Adatbázis tesztelés (databaseFragment)
+
+**Tesztelést elvégezte**:       [HPeti](https://github.com/HPeti)  
+**App verziója**:               v0.0.3  
+**Tesztelés ideje**:            2021. 11. 27. 15:00  
+**Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
+**Android verziója**:           Android 11 (Honeycomb)  
+**Tesztelt komponens leírása**: Adatbáziskapcsolat kialakítása  
+**Várt eredmény**:              Az adatbázis kapcsolat létrejön lokális hálózaton belül    
+**Kapott eredmény**:            Az adatbázisra történő kapcsolódás összeomlasztja az alkalmazást. &#10060;  
+**Oka**:                        Nem található a DriverAction-nek szükséges osztály (Oracle JDBC és MySQL JDBC driver is kipróbálva).  
 
 ---
 
@@ -89,7 +109,7 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelés ideje**:            2021. 11. 27. 14:51  
 **Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
 **Android verziója**:           Android 11 (Honeycomb)  
-**Tesztelt komponens leírása**: CSV kiírása 
+**Tesztelt komponens leírása**: CSV kiírása  
 **Várt eredmény**:              Ki tudunk írni egy fájlba tetszőleges szöveget  
 **Kapott eredmény**:            A legenerált fájlba kiíródik a beadott tartalom a példamezőkkel együtt. &#9989;  
 
@@ -100,7 +120,7 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelés ideje**:            2021. 11. 27. 14:54  
 **Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
 **Android verziója**:           Android 11 (Honeycomb)  
-**Tesztelt komponens leírása**: CSV olvasása  
+**Tesztelt komponens leírása**: CSV olvasása   
 **Várt eredmény**:              Be tudunk olvasn egy fájlból tetszőleges szöveget  
 **Kapott eredmény**:            A visszaolvasott fájl tartalma olvasható és megjeleníthető az alkalmazásban. &#9989;  
 
