@@ -31,12 +31,13 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
     private lateinit var z_value: TextView
     private lateinit var timeText: TextView
     private lateinit var deltaTimeText: TextView
+    private lateinit var xDistanceText: TextView
     private var  deltaT : Double = 0.0
     private var  oldTimeMS : Double = 0.0
     private var xDistance : Double = 0.0
     private val threshold : Double = 0.02
     private val thresholdNegative : Double = threshold * -1
-    private lateinit var xDistanceText: TextView
+    private var oldVelocity : Double = 0.0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -69,7 +70,7 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
         sensorManager = activity?.getSystemService(SENSOR_SERVICE) as SensorManager
         //its us not ms! (1ms = 1000 us)
         linearAccelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION).also {
-            sensorManager.registerListener(this, it, 10000)
+            sensorManager.registerListener(this, it, 20000)
         }
     }
 
@@ -101,7 +102,19 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
                 deltaTimeText.setText("delta time: "+ deltaT + "ms")
 
                 //xDistance += 1/2 * event.values[1] * ((deltaT/1000) * (deltaT/1000))
-                xDistance += 1/2 * xVal * (deltaT/1000).pow(2)
+
+                /* s = u * t + 1/2 * a * t^2
+                   s = distance
+                   u = initial velocity
+                   t = time (delta t)
+                   a = acceleration
+                */
+                /* v = u + a * t
+                   u = initial velocity
+                   a = acceleration
+                   t = time (delta t)
+                */
+                xDistance += (1/2).toDouble() * xVal * (deltaT/1000).pow(2)
                 xDistanceText.setText("X distance: " + xDistance + " cm")
             }
             oldTimeMS =(event.timestamp / 10000000 ).toDouble()
