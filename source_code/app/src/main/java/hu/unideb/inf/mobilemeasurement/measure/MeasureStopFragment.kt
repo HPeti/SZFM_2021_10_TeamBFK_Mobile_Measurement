@@ -17,6 +17,8 @@ import androidx.navigation.findNavController
 import hu.unideb.inf.mobilemeasurement.R
 import hu.unideb.inf.mobilemeasurement.databinding.FragmentMeasureStartBinding
 import hu.unideb.inf.mobilemeasurement.databinding.FragmentMeasureStopBinding
+import java.sql.Timestamp
+import kotlin.math.pow
 
 class MeasureStopFragment : Fragment(), SensorEventListener {
 
@@ -29,8 +31,11 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
     private lateinit var z_value: TextView
     private lateinit var timeText: TextView
     private lateinit var deltaTimeText: TextView
-    private var deltaT : Long = 0L
+    private var  deltaT : Double = 0.0
+    private var  oldTimeMS : Double = 0.0
     private var xDistance : Double = 0.0
+    private val threshold : Double = 0.02
+    private val thresholdNegative : Double = threshold * -1
     private lateinit var xDistanceText: TextView
 
 
@@ -62,7 +67,7 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
     private fun setUpSensor() {
         //sensorManager = this.context?.getSystemService(Context.SENSOR_SERVICE) as SensorManager
         sensorManager = activity?.getSystemService(SENSOR_SERVICE) as SensorManager
-        //its us not ms! (1ms = 100 us)
+        //its us not ms! (1ms = 1000 us)
         linearAccelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION).also {
             sensorManager.registerListener(this, it, 10000)
         }
@@ -70,17 +75,36 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
 
     override fun onSensorChanged(event: SensorEvent?) {
         if (event?.sensor?.type == Sensor.TYPE_LINEAR_ACCELERATION) {
-            if(deltaT != 0L){
-                x_value.setText("X: " + event.values[0])
-                y_value.setText("Y: " + event.values[1])
-                z_value.setText("Z: " + event.values[2])
-                timeText.setText("Timestamp: " + event.timestamp / 10000000 )
-                deltaT = (event.timestamp - deltaT) / 10000000
+            if(oldTimeMS != 0.0){
+                var xVal = event.values[0]
+                var yVal = event.values[1]
+                var zVal = event.values[2]
+
+                if(xVal < threshold && xVal > thresholdNegative){
+                    xVal = 0F
+                }
+                if(yVal < threshold && yVal > thresholdNegative){
+                    yVal = 0F
+                }
+                if(zVal < threshold && zVal > thresholdNegative){
+                    zVal = 0F
+                }
+
+                x_value.setText("X: " + xVal)
+                y_value.setText("Y: " + yVal)
+                z_value.setText("Z: " + zVal)
+
+                timeText.setText("Timestamp: " + event.timestamp)
+
+                deltaT = ((event.timestamp / 10000000  ).toDouble() - oldTimeMS)
+
                 deltaTimeText.setText("delta time: "+ deltaT + "ms")
+
+                //xDistance += 1/2 * event.values[1] * ((deltaT/1000) * (deltaT/1000))
+                xDistance += 1/2 * xVal * (deltaT/1000).pow(2)
+                xDistanceText.setText("X distance: " + xDistance + " cm")
             }
-            deltaT = event.timestamp
-            xDistance += 1/2 * event.values[2] * ((deltaT*1000) * (deltaT*1000))
-            xDistanceText.setText("X distance: " + xDistance + " méter")
+            oldTimeMS =(event.timestamp / 10000000 ).toDouble()
         }
 
     }
