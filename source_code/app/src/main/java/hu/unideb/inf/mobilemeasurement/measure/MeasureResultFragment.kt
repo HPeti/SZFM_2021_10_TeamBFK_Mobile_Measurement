@@ -19,7 +19,7 @@ class MeasureResultFragment : Fragment() {
         val binding = DataBindingUtil.inflate<FragmentMeasureResultBinding>(
             inflater, R.layout.fragment_measure_result, container, false)
 
-        binding.mainpagebutton.setOnClickListener { view ->
+        binding.mainPageButton.setOnClickListener { view ->
             view.findNavController().navigate(MeasureResultFragmentDirections.actionMeasureResultFragmentToHomeFragment())
         }
 
