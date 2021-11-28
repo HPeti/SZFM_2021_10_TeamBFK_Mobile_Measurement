@@ -33,7 +33,16 @@
     <fragment
         android:id="@+id/measureStopFragment"
         android:name="hu.unideb.inf.mobilemeasurement.measure.MeasureStopFragment"
-        android:label="Mérés leállítása" />
+        android:label="Mérés leállítása"
+        tools:layout="@layout/fragment_measure_stop">
+        <action
+            android:id="@+id/action_measureStopFragment_to_measureResultFragment"
+            app:destination="@id/measureResultFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
     <fragment
         android:id="@+id/infoFragment"
         android:name="hu.unideb.inf.mobilemeasurement.info.InfoFragment"
@@ -52,9 +61,16 @@
     <fragment
         android:id="@+id/databaseFragment"
         android:name="hu.unideb.inf.mobilemeasurement.database.databaseFragment"
-        android:label="Adatbázis" />
+        android:label="Adatbázis"
+        tools:layout="@layout/fragment_database"/>
     <fragment
         android:id="@+id/csvTestFragment"
         android:name="hu.unideb.inf.mobilemeasurement.csv.CsvTestFragment"
-        android:label="CsvTestFragment" />
+        android:label="CsvTestFragment"
+        tools:layout="@layout/fragment_csv_test"/>
+    <fragment
+        android:id="@+id/measureResultFragment"
+        android:name="hu.unideb.inf.mobilemeasurement.measure.MeasureResultFragment"
+        android:label="Mérés eredménye"
+        tools:layout="@layout/fragment_measure_result"/>
 </navigation>
