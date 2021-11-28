@@ -7,8 +7,7 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="hu.unideb.inf.mobilemeasurement.home.HomeFragment"
-        android:label="Kezdőoldal"
-        tools:layout="@layout/fragment_home" >
+        android:label="Kezdőoldal">
         <action
             android:id="@+id/action_homeFragment_to_measureStartFragment"
             app:destination="@id/measureStartFragment"
@@ -71,6 +70,9 @@
     <fragment
         android:id="@+id/measureResultFragment"
         android:name="hu.unideb.inf.mobilemeasurement.measure.MeasureResultFragment"
-        android:label="Mérés eredménye"
-        tools:layout="@layout/fragment_measure_result"/>
+        android:label="Mérés eredménye" >
+        <action
+            android:id="@+id/action_measureResultFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>
