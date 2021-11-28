@@ -53,6 +53,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ---
 
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
+**App verziója**:               v0.0.3  
+**Tesztelés ideje**:            2021. 11. 28. 20:30
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Android verziója**:           Android 11 (Red Velvet Cake) 
+**Tesztelt komponens leírása**: Menü megjelenése  
+**Várt eredmény**:              A menü elemek betöltenek ikonokkal.
+**Kapott eredmény**:            A menü elemek betöltöttek, megfelelő és hozzátartozó ikonokkal &#9989; 
+
+---
+
 **Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
 **App verziója**:               v0.0.3  
 **Tesztelés ideje**:            2021. 11. 27. 20:00  
@@ -143,6 +154,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ---
 
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor) 
+**App verziója**:               v0.0.3  
+**Tesztelés ideje**:            2021. 11. 28. 21:09 
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Android verziója**:           Android 11 (Red Velvet Cake)   
+**Tesztelt komponens leírása**: Főoldal megjelenése  
+**Várt eredmény**:              A főoldal elemei betöltenek, képpel, szöveggel és gombbal.  
+**Kapott eredmény**:            A főoldal elemei betöltöttek, megfelelő pozíciókban. &#9989; 
+
+---
+
 **Tesztelést elvégezte**:       [HPeti](https://github.com/HPeti)  
 **App verziója**:               v0.0.3  
 **Tesztelés ideje**:            2021. 11. 27. 14:02  
@@ -184,6 +206,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelt komponens leírása**: Főoldal navigációja  
 **Várt eredmény**:              A 'Mérés indítása' gomb átvisz a 'Mérés' oldalra  
 **Kapott eredmény**:            A gomb megnyomása után átnavigál az alkalmzás a Mérés menüpontra. &#9989;  
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor) 
+**App verziója**:               v0.0.3  
+**Tesztelés ideje**:            2021. 11. 28. 21:20
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Android verziója**:           Android 11 (Red Velvet Cake)   
+**Tesztelt komponens leírása**: Főoldal navigációja  
+**Várt eredmény**:              A 'Mérés indítása' gomb átvisz a 'Mérés' oldalra  
+**Kapott eredmény**:            A gomb megnyomása után átnavigál az alkalmzás a Mérés menüpontra. &#9989; 
 
 ---
 
@@ -229,6 +262,19 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelt komponens leírása**: A mérés leállítása felület gombjainak működése  
 **Várt eredmény**:              A mérés leállítása felület gombjai benyomásával eléri a szenzorokat és megjeleníti azokat  
 **Kapott eredmény**:            A mérés leállítása felület gombjai benyomásával eléri a szenzorokat és megjeleníti azokat (a restart gom még nem működik) &#9989;
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor) 
+**App verziója**:               v0.0.3  
+**Tesztelés ideje**:            2021. 11. 28. 21:29
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: A mérés leállítása felület gombjainak működése  
+**Várt eredmény**:              A mérés leállítása felület gombjai benyomásával eléri a szenzorokat és megjeleníti azokat  
+**Kapott eredmény**:            A mérés leállítása felület gombjai benyomásával eléri a szenzorokat és megjeleníti azokat (a restart gom még nem működik) &#9989;
+
+---
 
 ## Mérési eredmények (ResultsFragment)
 
@@ -280,6 +326,16 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ---
 
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor) 
+**App verziója**:               v0.0.3  
+**Tesztelés ideje**:            2021. 11. 28. 21:36
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: Night mode működése  
+**Várt eredmény**:              A Night mode kapcsoló átkapcsol világos és sötét téma között  
+**Kapott eredmény**:            A gomb megnyomása után az applikáció betölti a sötét és világos módot is, miután ráfrissített az alkalmazás kinézetére &#9989;
+
+---
 ## Információ (InfoFragment)
 
 
@@ -321,6 +377,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelés ideje**:            2021. 11. 27. 20:10  
 **Telefon modellje**:           Samsung Galaxy A40  
 **Android verziója**:           Android 11  
+**Tesztelt komponens leírása**: Verzió szám megjelenése  
+**Várt eredmény**:              A jelenlegi verziószám jól megjelenik az információs oldalon is.  
+**Kapott eredmény**:            Megjelent a v0.0.3 verziószám az oldalon. &#9989;
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor) 
+**App verziója**:               v0.0.3  
+**Tesztelés ideje**:            2021. 11. 28. 21:42
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Android verziója**:           Android 11 (Red Velvet Cake)  
 **Tesztelt komponens leírása**: Verzió szám megjelenése  
 **Várt eredmény**:              A jelenlegi verziószám jól megjelenik az információs oldalon is.  
 **Kapott eredmény**:            Megjelent a v0.0.3 verziószám az oldalon. &#9989;
@@ -373,6 +440,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelt komponens leírása**: Adatbáziskapcsolat kialakítása  
 **Várt eredmény**:              Az adatbázis kapcsolat létrejön lokális hálózaton belül    
 **Oka**:                        Nem található a DriverAction-nek szükséges osztály (Oracle JDBC és MySQL JDBC driver is kipróbálva).  
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor) 
+**App verziója**:               v0.0.3  
+**Tesztelés ideje**:            2021. 11. 28. 21:45
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Android verziója**:           Android 11 (Red Velvet Cake)   
+**Tesztelt komponens leírása**: Adatbáziskapcsolat kialakítása  
+**Várt eredmény**:              Az adatbázis kapcsolat létrejön lokális hálózaton belül    
+**Oka**:                        Nem található a DriverAction-nek szükséges osztály (Oracle JDBC és MySQL JDBC driver is kipróbálva). 
 
 ---
 
@@ -510,3 +588,35 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Kapott eredmény**:            A generált fájl megfelelő helyen lett eltárolva. &#9989;  
 
 ---
+
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)
+**App verziója**:               v0.0.3  
+**Tesztelés ideje**:            2021. 11. 28. 20:55  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: Kötelező elemek kitöltése  
+**Várt eredmény**:              Az alkalmazás Toast ikonnal figyelmeztet, ha nincs kiválasztva a mérni kívánt távolság.
+**Kapott eredmény**:            A Toast üzenet megjelenik, ha egyik radio button sincs kiválasztva. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor) 
+**App verziója**:               v0.0.3  
+**Tesztelés ideje**:            2021. 11. 28. 21:00  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Android verziója**:           Android 11 (Red Velvet Cake) 
+**Tesztelt komponens leírása**: Kötelező elemek kitöltése  
+**Várt eredmény**:              Az alkalmazás Toast ikonnal figyelmeztet, ha nincs kiválasztva a mintavételezés.
+**Kapott eredmény**:            A Toast üzenet megjelenik, ha egyik radio button sincs kiválasztva. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)
+**App verziója**:               v0.0.3  
+**Tesztelés ideje**:            2021. 11. 28. 21:05  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Android verziója**:           Android 11 (Red Velvet Cake) 
+**Tesztelt komponens leírása**: Kötelező elemek kitöltése   
+**Várt eredmény**:              Az alkalmazás Toast ikonnal figyelmeztet, ha nincs kiválasztva a telefon orientációja.
+**Kapott eredmény**:            A Toast üzenet megjelenik, ha egyik radio button sincs kiválasztva. &#9989; 
