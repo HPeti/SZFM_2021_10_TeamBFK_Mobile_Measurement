@@ -11,37 +11,57 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.core.content.ContextCompat.getSystemService
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.findNavController
 import hu.unideb.inf.mobilemeasurement.R
-import hu.unideb.inf.mobilemeasurement.databinding.FragmentMeasureStartBinding
 import hu.unideb.inf.mobilemeasurement.databinding.FragmentMeasureStopBinding
-import java.sql.Timestamp
 import kotlin.math.pow
 
 class MeasureStopFragment : Fragment(), SensorEventListener {
-
+    /** Setup values **/
+    private val maxNumberOfMeasures : Int = 3
+    private val threshold : Double = 0.02
+    private val thresholdNegative : Double = threshold * -1
 
     /**Sensors**/
     private lateinit var sensorManager: SensorManager
     private var linearAccelerometer: Sensor? = null
+
+    /** Binding values**/
     private lateinit var x_value: TextView
     private lateinit var y_value: TextView
     private lateinit var z_value: TextView
     private lateinit var timeText: TextView
     private lateinit var deltaTimeText: TextView
     private lateinit var xDistanceText: TextView
-    private var  deltaT : Double = 0.0
-    private var  oldTimeMS : Double = 0.0
-    private var xDistance : Double = 0.0
-    private val threshold : Double = 0.02
-    private val thresholdNegative : Double = threshold * -1
-    private var oldVelocity : Double = 0.0
+    private lateinit var completionText: TextView
 
+    /** Measurement values **/
+    private var deltaT : Double = 0.0
+    private var oldTimeMS : Double = 0.0
+    private var xDistance : Double = 0.0
+    private var currentNumberOfMeasures : Int = 0
+    private var isMeasureRunning : Boolean = false
+    private var oldVelocity : Double = 0.0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+    }
+
+    fun setupBinding(binding: FragmentMeasureStopBinding){
+        x_value = binding.xText
+        y_value = binding.yText
+        z_value = binding.zText
+        timeText = binding.timeText
+        deltaTimeText = binding.deltaTimeText
+        xDistanceText = binding.xDistanceText
+        completionText = binding.completionTextView
+
+        completionText.text = currentNumberOfMeasures.toString() + " / " + maxNumberOfMeasures
+    }
+
+    fun incrementCompletion(){
+        currentNumberOfMeasures++
+        completionText.text = currentNumberOfMeasures.toString() + " / " + maxNumberOfMeasures
     }
 
     override fun onCreateView(
@@ -52,21 +72,32 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
             inflater,
             R.layout.fragment_measure_stop,
             container,
-            false
-        )
-        setUpSensor()
-        x_value = binding.xText
-        y_value = binding.yText
-        z_value = binding.zText
-        timeText = binding.timeText
-        deltaTimeText = binding.deltaTimeText
-        xDistanceText = binding.xDistanceText
+            false)
+
+        setupBinding(binding)
+
+        binding.startMeasureButton.setOnClickListener{
+            if(currentNumberOfMeasures < maxNumberOfMeasures && !isMeasureRunning){
+                setUpSensor()
+                isMeasureRunning = true
+                incrementCompletion()
+            }
+        }
+
+        binding.stopMeasureButton.setOnClickListener{
+            if(isMeasureRunning){
+                sensorManager.unregisterListener(this)
+                isMeasureRunning = false
+                if(currentNumberOfMeasures == maxNumberOfMeasures){
+
+                }
+            }
+        }
         return binding.root
     }
 
     /**Sensor Calcualtions**/
     private fun setUpSensor() {
-        //sensorManager = this.context?.getSystemService(Context.SENSOR_SERVICE) as SensorManager
         sensorManager = activity?.getSystemService(SENSOR_SERVICE) as SensorManager
         //its us not ms! (1ms = 1000 us)
         linearAccelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION).also {
