@@ -12,6 +12,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import hu.unideb.inf.mobilemeasurement.R
 import hu.unideb.inf.mobilemeasurement.databinding.FragmentMeasureStopBinding
 import kotlin.math.pow
@@ -84,12 +85,12 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
             }
         }
 
-        binding.stopMeasureButton.setOnClickListener{
+        binding.stopMeasureButton.setOnClickListener{ view ->
             if(isMeasureRunning){
                 sensorManager.unregisterListener(this)
                 isMeasureRunning = false
                 if(currentNumberOfMeasures == maxNumberOfMeasures){
-
+                    view.findNavController().navigate(MeasureStopFragmentDirections.actionMeasureStopFragmentToMeasureResultFragment())
                 }
             }
         }
