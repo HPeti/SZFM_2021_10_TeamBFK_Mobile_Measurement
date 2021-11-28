@@ -146,7 +146,7 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
                    a = acceleration
                    t = time (delta t)
                 */
-                xDistance += (1/2).toDouble() * xVal * (deltaT/1000).pow(2)
+                xDistance += xVal * (deltaT/1000).pow(2)
                 xDistanceText.setText("X distance: " + xDistance + " cm")
             }
             oldTimeMS =(event.timestamp / 10000000 ).toDouble()
