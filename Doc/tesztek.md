@@ -5,6 +5,7 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 * Asus Zenfone ZE500KL ([HPeti](https://github.com/HPeti))
 * BlueStacks 5 emulator ONEPLUS A5000 - Android 7.0 Nougat ([halaszdd](https://github.com/halaszdd))
 * Samsung Galaxy A40 - Android 11 ([Nyika-Benedek](https://github.com/Nyika-Benedek))
+* Xiaomi Mi 10T PRO - Android 11 ([pisti9928](https://github.com/pisti9928))
 
 ## Menü (MainActivity)
 
@@ -24,6 +25,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelés ideje**:            2021. 11. 27. 13:56  
 **Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
 **Android verziója**:           Android 11 (Honeycomb)  
+**Tesztelt komponens leírása**: Menü megjelenése  
+**Várt eredmény**:              A menü elemek betöltenek ikonokkal.  
+**Kapott eredmény**:            A menü elemek betöltöttek, megfelelő és hozzátartozó ikonokkal &#9989;   
+
+---
+
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
+**App verziója**:               v0.0.4  
+**Tesztelés ideje**:            2021. 11. 2. 21:42  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
+**Android verziója**:           Android 11 R   
 **Tesztelt komponens leírása**: Menü megjelenése  
 **Várt eredmény**:              A menü elemek betöltenek ikonokkal.  
 **Kapott eredmény**:            A menü elemek betöltöttek, megfelelő és hozzátartozó ikonokkal &#9989;   
@@ -63,6 +75,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ---
 
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
+**App verziója**:               v0.0.4  
+**Tesztelés ideje**:            2021. 11. 2. 21:47  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
+**Android verziója**:           Android 11 R  
+**Tesztelt komponens leírása**: Menü megjelenése   
+**Várt eredmény**:              A jelenleg kiválasztott elem külön kiemelve megjelenik a menüben.    
+**Kapott eredmény**:            A jelenleg kiválasztott menüpont kiemelve megjelenik, menüváltások esetén megváltozik. &#9989;   
+
+---
+
 **Tesztelést elvégezte**:       [halaszdd](https://github.com/halaszdd)  
 **App verziója**:               v0.0.3  
 **Tesztelés ideje**:            2021. 11. 28. 16:58  
@@ -81,6 +104,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelés ideje**:            2021. 11. 27. 14:02  
 **Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
 **Android verziója**:           Android 11 (Honeycomb)  
+**Tesztelt komponens leírása**: Főoldal megjelenése  
+**Várt eredmény**:              A főoldal elemei betöltenek, képpel, szöveggel és gombbal.  
+**Kapott eredmény**:            A főoldal elemei betöltöttek, megfelelő pozíciókban. &#9989;  
+
+---
+
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
+**App verziója**:               v0.0.4  
+**Tesztelés ideje**:            2021. 11. 2. 21:49  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
+**Android verziója**:           Android 11 R  
 **Tesztelt komponens leírása**: Főoldal megjelenése  
 **Várt eredmény**:              A főoldal elemei betöltenek, képpel, szöveggel és gombbal.  
 **Kapott eredmény**:            A főoldal elemei betöltöttek, megfelelő pozíciókban. &#9989;  
@@ -114,6 +148,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelés ideje**:            2021. 11. 27. 14:02  
 **Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
 **Android verziója**:           Android 11 (Honeycomb)  
+**Tesztelt komponens leírása**: Főoldal navigációja  
+**Várt eredmény**:              A 'Mérés indítása' gomb átvisz a 'Mérés' oldalra  
+**Kapott eredmény**:            A gomb megnyomása után átnavigál az alkalmzás a Mérés menüpontra. &#9989;  
+
+---
+
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
+**App verziója**:               v0.0.4  
+**Tesztelés ideje**:            2021. 11. 2. 21:51  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
+**Android verziója**:           Android 11 R  
 **Tesztelt komponens leírása**: Főoldal navigációja  
 **Várt eredmény**:              A 'Mérés indítása' gomb átvisz a 'Mérés' oldalra  
 **Kapott eredmény**:            A gomb megnyomása után átnavigál az alkalmzás a Mérés menüpontra. &#9989;  
@@ -202,6 +247,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ---
 
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
+**App verziója**:               v0.0.4  
+**Tesztelés ideje**:            2021. 11. 2. 21:55  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
+**Android verziója**:           Android 11 R  
+**Tesztelt komponens leírása**: Night mode működése  
+**Várt eredmény**:              A Night mode kapcsoló átkapcsol világos és sötét téma között  
+**Kapott eredmény**:            A gomb megnyomása után az applikáció betölti a sötét és világos módot is, miután ráfrissített az alkalmazás kinézetére &#9989;  
+
+---
+
 **Tesztelést elvégezte**:       [halaszdd](https://github.com/halaszdd)  
 **App verziója**:               v0.0.3  
 **Tesztelés ideje**:            2021. 11. 28. 17:06  
@@ -238,6 +294,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ---
 
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
+**App verziója**:               v0.0.4  
+**Tesztelés ideje**:            2021. 11. 2. 22:05  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
+**Android verziója**:           Android 11 R  
+**Tesztelt komponens leírása**: Verzió szám megjelenése  
+**Várt eredmény**:              A jelenlegi verziószám jól megjelenik az információs oldalon is.  
+**Kapott eredmény**:            Megjelent a v0.0.3 verziószám az oldalon. &#9989;  
+
+---
+
 **Tesztelést elvégezte**:       [halaszdd](https://github.com/halaszdd)  
 **App verziója**:               v0.0.3  
 **Tesztelés ideje**:            2021. 11. 28. 17:08  
@@ -267,6 +334,18 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelés ideje**:            2021. 11. 27. 15:00  
 **Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
 **Android verziója**:           Android 11 (Honeycomb)  
+**Tesztelt komponens leírása**: Adatbáziskapcsolat kialakítása  
+**Várt eredmény**:              Az adatbázis kapcsolat létrejön lokális hálózaton belül    
+**Kapott eredmény**:            Az adatbázisra történő kapcsolódás összeomlasztja az alkalmazást. &#10060;  
+**Oka**:                        Nem található a DriverAction-nek szükséges osztály (Oracle JDBC és MySQL JDBC driver is kipróbálva).  
+
+---
+
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
+**App verziója**:               v0.0.4  
+**Tesztelés ideje**:            2021. 11. 2. 22:07  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
+**Android verziója**:           Android 11 R  
 **Tesztelt komponens leírása**: Adatbáziskapcsolat kialakítása  
 **Várt eredmény**:              Az adatbázis kapcsolat létrejön lokális hálózaton belül    
 **Kapott eredmény**:            Az adatbázisra történő kapcsolódás összeomlasztja az alkalmazást. &#10060;  
@@ -311,6 +390,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ---
 
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
+**App verziója**:               v0.0.4  
+**Tesztelés ideje**:            2021. 11. 2. 22:10  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
+**Android verziója**:           Android 11 R  
+**Tesztelt komponens leírása**: CSV kiírása  
+**Várt eredmény**:              Ki tudunk írni egy fájlba tetszőleges szöveget  
+**Kapott eredmény**:            A legenerált fájlba kiíródik a beadott tartalom a példamezőkkel együtt. &#9989;  
+
+---
+
 **Tesztelést elvégezte**:       [halaszdd](https://github.com/halaszdd)  
 **App verziója**:               v0.0.3  
 **Tesztelés ideje**:            2021. 11. 28. 17:09  
@@ -344,6 +434,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ---
 
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
+**App verziója**:               v0.0.4  
+**Tesztelés ideje**:            2021. 11. 2. 22:12  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
+**Android verziója**:           Android 11 R  
+**Tesztelt komponens leírása**: CSV olvasása   
+**Várt eredmény**:              Be tudunk olvasn egy fájlból tetszőleges szöveget  
+**Kapott eredmény**:            A visszaolvasott fájl tartalma olvasható és megjeleníthető az alkalmazásban. &#9989;  
+
+---
+
 **Tesztelést elvégezte**:       [halaszdd](https://github.com/halaszdd)  
 **App verziója**:               v0.0.3  
 **Tesztelés ideje**:            2021. 11. 28. 17:12  
@@ -371,6 +472,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelés ideje**:            2021. 11. 27. 14:56  
 **Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
 **Android verziója**:           Android 11 (Honeycomb)  
+**Tesztelt komponens leírása**: CSV mentési helye  
+**Várt eredmény**:              A generált CSV fájl az \Android\data\hu.unideb.inf.mobilemeasurement\files\csvs\csv_test_output.csv helyen található meg.
+**Kapott eredmény**:            A generált fájl megfelelő helyen lett eltárolva. &#9989;  
+
+---
+
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
+**App verziója**:               v0.0.4  
+**Tesztelés ideje**:            2021. 11. 2. 22:20  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
+**Android verziója**:           Android 11 R  
 **Tesztelt komponens leírása**: CSV mentési helye  
 **Várt eredmény**:              A generált CSV fájl az \Android\data\hu.unideb.inf.mobilemeasurement\files\csvs\csv_test_output.csv helyen található meg.
 **Kapott eredmény**:            A generált fájl megfelelő helyen lett eltárolva. &#9989;  
