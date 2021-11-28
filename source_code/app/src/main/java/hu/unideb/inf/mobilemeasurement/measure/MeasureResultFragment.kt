@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import hu.unideb.inf.mobilemeasurement.R
 import hu.unideb.inf.mobilemeasurement.databinding.FragmentMeasureResultBinding
 
@@ -17,6 +18,11 @@ class MeasureResultFragment : Fragment() {
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentMeasureResultBinding>(
             inflater, R.layout.fragment_measure_result, container, false)
+
+        binding.mainPageButton.setOnClickListener { view ->
+            view.findNavController().navigate(MeasureResultFragmentDirections.actionMeasureResultFragmentToHomeFragment())
+        }
+
 
         return binding.root
     }

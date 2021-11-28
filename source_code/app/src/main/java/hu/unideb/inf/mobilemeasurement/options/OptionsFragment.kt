@@ -47,6 +47,7 @@ class OptionsFragment : Fragment() {
             }
         }
 
+        binding.modelTextView.setText(android.os.Build.MODEL)
         return binding.root
     }
 }
