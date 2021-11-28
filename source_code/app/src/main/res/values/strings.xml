@@ -47,6 +47,7 @@
     <string name="sampleTimestampValueText">Timestamp: -</string>
     <string name="sampleDeltaTime">delta time: - </string>
     <string name="sampleXDistanceText">X: - cm</string>
+    <string name="MainPage">Főoldal</string>
     <string name="authors">Fejlesztők:  \n
                             Halász Dániel \n
                             Hegedűs Péter \n
