@@ -49,6 +49,13 @@ A projekt részeinek heti lebontása az alábbi táblázatban látható:
 ### 2.4. Mérföldkövek
 Ide vesszük fel majd a mérföldköveket, amelyek sprintek között fog történni.
 
+|     Dátum     | App verziószám | Leírás, hozzáadott funkciók | 
+|     :---:     |      :---:     |-----------------------------|
+| 2021. 11. 07. |     v0.0.1     | Alap menürendszer, Kezdőlap, info, beállítások, mérés paraméterei oldalak kinézete |
+| 2021. 11. 14. |     v0.0.2     | Menürendszer újradolgozása, Fragment kezelés, gombokkal történő navigáció dataBinding használata ettől a verziótól |
+| 2021. 11. 21. |     v0.0.3     | Adatbázis tesztelés (Oracle/MySQL JDBC), CSV fájlkezelés tesztelése |
+| 2021. 11. 28. |     v0.0.4     | Mérés folyamatának kezelésének megvalósítása, adatbázis szerkezetének újragondolása CSV kimenetbe |
+
 ## 3. Üzleti folyamatok modellje
 
 1. Egy bútorszállítással foglalkozó cég felkérte csapatunkat, hogy csináljunk egy mobil alkalmazást, amellyel távolságot tudnak mérni.
