@@ -40,6 +40,13 @@
     <string name="Password">jelszó</string>
     <string name="Connect">Kapcsolódás</string>
     <string name="DBtext">Database text</string>
+    <string name="sampleCompletionText">0 / 5</string>
+    <string name="sampleXValueText">X: - </string>
+    <string name="sampleYValueText">Y: - </string>
+    <string name="sampleZValueText">Z: - </string>
+    <string name="sampleTimestampValueText">Timestamp: -</string>
+    <string name="sampleDeltaTime">delta time: - </string>
+    <string name="sampleXDistanceText">X: - cm</string>
     <string name="authors">Fejlesztők:  \n
                             Halász Dániel \n
                             Hegedűs Péter \n
