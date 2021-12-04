@@ -1,6 +1,5 @@
 package hu.unideb.inf.mobilemeasurement.measure
 
-import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,20 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioGroup
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import hu.unideb.inf.mobilemeasurement.R
-import hu.unideb.inf.mobilemeasurement.databinding.FragmentHomeBinding
 import hu.unideb.inf.mobilemeasurement.databinding.FragmentMeasureStartBinding
-import hu.unideb.inf.mobilemeasurement.home.HomeFragmentDirections
 import android.widget.Toast
-
-import hu.unideb.inf.mobilemeasurement.MainActivity
-
-
-
-
 
 
 class MeasureStartFragment : Fragment() {
@@ -29,7 +19,15 @@ class MeasureStartFragment : Fragment() {
     lateinit var distanceRadioGroup : RadioGroup
     lateinit var samplingRadioGroup: RadioGroup
     lateinit var orientationRadioGroup: RadioGroup
-    lateinit var viewModel: MeasureStartViewModel
+    lateinit var viewModel: MeasureViewModel
+
+    fun setupClass(binding : FragmentMeasureStartBinding){
+        //setup binding and viewmodel here
+        distanceRadioGroup = binding.distanceRadioGroup
+        samplingRadioGroup = binding.samplingRadioGroup
+        orientationRadioGroup = binding.orientationRadioGroup
+        viewModel = ViewModelProvider(this).get(MeasureViewModel::class.java)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,12 +45,7 @@ class MeasureStartFragment : Fragment() {
             false
         )
 
-
-        distanceRadioGroup = binding.distanceRadioGroup
-        samplingRadioGroup = binding.samplingRadioGroup
-        orientationRadioGroup = binding.orientationRadioGroup
-
-        viewModel = ViewModelProvider(this).get(MeasureStartViewModel::class.java)
+        setupClass(binding)
 
         distanceRadioGroup.setOnCheckedChangeListener { group, checkedId ->
             when (checkedId) {
