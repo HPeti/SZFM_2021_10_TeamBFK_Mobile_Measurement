@@ -1,6 +1,7 @@
 package hu.unideb.inf.mobilemeasurement.measure
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -12,9 +13,13 @@ import androidx.navigation.findNavController
 import hu.unideb.inf.mobilemeasurement.R
 import hu.unideb.inf.mobilemeasurement.databinding.FragmentMeasureStartBinding
 import android.widget.Toast
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 class MeasureStartFragment : Fragment() {
+
+    private val phoneID : String = android.os.Build.BRAND+"_"+android.os.Build.MODEL
 
     lateinit var distanceRadioGroup : RadioGroup
     lateinit var samplingRadioGroup: RadioGroup
@@ -26,7 +31,9 @@ class MeasureStartFragment : Fragment() {
         distanceRadioGroup = binding.distanceRadioGroup
         samplingRadioGroup = binding.samplingRadioGroup
         orientationRadioGroup = binding.orientationRadioGroup
+
         viewModel = ViewModelProvider(this).get(MeasureViewModel::class.java)
+        binding.measureViewModel = viewModel
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,6 +53,7 @@ class MeasureStartFragment : Fragment() {
         )
 
         setupClass(binding)
+        binding.phoneIDText.setText(phoneID)
 
         distanceRadioGroup.setOnCheckedChangeListener { group, checkedId ->
             when (checkedId) {
@@ -65,13 +73,10 @@ class MeasureStartFragment : Fragment() {
 
         orientationRadioGroup.setOnCheckedChangeListener { group, checkedId ->
             when (checkedId){
-                binding.verticalButton.id -> viewModel.sampling_Rate.value = 1
-                binding.horizontalButton.id -> viewModel.sampling_Rate.value = 2
+                binding.verticalButton.id -> viewModel.orientation.value = "A"
+                binding.horizontalButton.id -> viewModel.orientation.value = "B"
             }
         }
-
-        binding.phoneIDText.setText(android.os.Build.MODEL)
-
 
         binding.NextButton.setOnClickListener{ view ->
 
@@ -88,12 +93,17 @@ class MeasureStartFragment : Fragment() {
                 Toast.makeText(activity?.applicationContext, "Nem választotta ki a telefon orientációját", Toast.LENGTH_SHORT).show();
             }
             else {
+                if(binding.measureIDInput.getText().toString() == ""){
+                    viewModel.measure_ID.value = "no id"
+                }
+                viewModel.phone_ID.value = phoneID
+                viewModel.date.value = Calendar.getInstance().getTime()
+                Log.i("MeasureStart", viewModel.phone_ID.value.toString())
                 view.findNavController()
                     .navigate(MeasureStartFragmentDirections.actionMeasureStartFragmentToMeasureStopFragment())
             }
         }
-        return binding.root
 
-        //distanceRadioGroup = myView.findViewById<RadioGroup>(R.id.distance_Radio_Group)
+        return binding.root
     }
 }
