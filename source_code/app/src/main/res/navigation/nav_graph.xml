@@ -20,7 +20,8 @@
     <fragment
         android:id="@+id/measureStartFragment"
         android:name="hu.unideb.inf.mobilemeasurement.measure.MeasureStartFragment"
-        android:label="Mérés indítása">
+        android:label="Mérés indítása"
+        tools:layout="@layout/fragment_measure_start">
         <action
             android:id="@+id/action_measureStartFragment_to_measureStopFragment"
             app:destination="@id/measureStopFragment"
@@ -128,6 +129,10 @@
             app:argType="java.lang.Double" />
         <action
             android:id="@+id/action_measureResultFragment_to_measureStartFragment"
-            app:destination="@id/measureStartFragment" />
+            app:destination="@id/measureStartFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
     </fragment>
 </navigation>

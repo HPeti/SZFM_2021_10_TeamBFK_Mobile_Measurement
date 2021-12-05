@@ -84,8 +84,8 @@ class MeasureStartFragment : Fragment() {
 
         orientationRadioGroup.setOnCheckedChangeListener { group, checkedId ->
             when (checkedId){
-                binding.verticalButton.id -> viewModel.orientation.value = "A"
-                binding.horizontalButton.id -> viewModel.orientation.value = "B"
+                binding.verticalButton.id -> viewModel.orientation.value = "vertical"
+                binding.horizontalButton.id -> viewModel.orientation.value = "horizontal"
             }
         }
 
