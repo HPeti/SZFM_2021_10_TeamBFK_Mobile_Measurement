@@ -836,3 +836,25 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Kapott eredmény**:            Túl nagy távolság eltérés, sebesség inkonzisztens. &#10060; 
 
 ---
+
+**Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 5. 23:10  
+**Telefon modellje**:           Samsung Galaxy A40  
+**Android verziója**:           Android 11  
+**Tesztelt komponens leírása**: Mérés tesztelése  
+**Várt eredmény**:              A csv-ben mostmár tényleges mérési adatokat ment le.  
+**Kapott eredmény**:            A csv-ben mostmár tényleges mérési adatokat ment le. &#9989;  
+
+---
+
+**Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 5. 23:10  
+**Telefon modellje**:           Samsung Galaxy A40  
+**Android verziója**:           Android 11  
+**Tesztelt komponens leírása**: Mérés tesztelése  
+**Várt eredmény**:              A mérések viszanylagosan helyes adatok adnak vissza.  
+**Kapott eredmény**:            A mérések Pontatlanok. &#9989;  
+
+---
