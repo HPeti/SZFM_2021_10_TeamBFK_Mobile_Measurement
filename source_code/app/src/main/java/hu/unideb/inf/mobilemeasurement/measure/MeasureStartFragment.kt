@@ -15,6 +15,7 @@ import hu.unideb.inf.mobilemeasurement.databinding.FragmentMeasureStartBinding
 import android.widget.Toast
 import java.text.SimpleDateFormat
 import java.util.*
+import kotlin.collections.ArrayList
 
 
 class MeasureStartFragment : Fragment() {
@@ -25,6 +26,7 @@ class MeasureStartFragment : Fragment() {
     lateinit var samplingRadioGroup: RadioGroup
     lateinit var orientationRadioGroup: RadioGroup
     lateinit var viewModel: MeasureViewModel
+    private lateinit var viewModelFactory : MeasureViewModelFactory
 
     fun setupClass(binding : FragmentMeasureStartBinding){
         //setup binding and viewmodel here
@@ -32,7 +34,18 @@ class MeasureStartFragment : Fragment() {
         samplingRadioGroup = binding.samplingRadioGroup
         orientationRadioGroup = binding.orientationRadioGroup
 
-        viewModel = ViewModelProvider(this).get(MeasureViewModel::class.java)
+        viewModelFactory = MeasureViewModelFactory(0,
+            "",
+            "",
+            0,
+            "",
+            arrayListOf<Float>(),
+            arrayListOf<Float>(),
+            arrayListOf<Float>(),
+            0.0,
+            0.0,
+            0.0)
+        viewModel = ViewModelProvider(this, viewModelFactory).get(MeasureViewModel::class.java)
         binding.measureViewModel = viewModel
     }
 
@@ -93,14 +106,19 @@ class MeasureStartFragment : Fragment() {
                 Toast.makeText(activity?.applicationContext, "Nem választotta ki a telefon orientációját", Toast.LENGTH_SHORT).show();
             }
             else {
-                if(binding.measureIDInput.getText().toString() == ""){
+                if(binding.measureIDInput.text.isEmpty()){
                     viewModel.measure_ID.value = "no id"
                 }
                 viewModel.phone_ID.value = phoneID
-                viewModel.date.value = Calendar.getInstance().getTime()
                 Log.i("MeasureStart", viewModel.phone_ID.value.toString())
                 view.findNavController()
-                    .navigate(MeasureStartFragmentDirections.actionMeasureStartFragmentToMeasureStopFragment())
+                    .navigate(MeasureStartFragmentDirections.
+                    actionMeasureStartFragmentToMeasureStopFragment(viewModel.distance.value!!.toInt(),
+                        viewModel.measure_ID.value.toString(),
+                        viewModel.phone_ID.value.toString(),
+                        viewModel.sampling_Rate.value!!.toInt(),
+                        viewModel.orientation.value.toString()
+                    ))
             }
         }
 
