@@ -65,6 +65,8 @@ class MeasureResultFragment : Fragment() {
         measure2Value.setText(viewModel.measure_ID.value.toString())
         measure3Value.setText(currentDate)
         writeMeasurementToFile()
+        writeSensorDatasToFile()
+
         return binding.root
     }
 
@@ -101,4 +103,44 @@ class MeasureResultFragment : Fragment() {
         )
         Log.i("MeasureResultFragment:CSV", "File exists, appending measurements.csv")
     }
+
+    private fun convertSensorDataToString(sensorDataCount : Int, eventNumber : Int, sensorData: SensorData) : String {
+        return (viewModel.phone_ID.value.toString() + ";"
+                + currentDate + ";"
+                + sensorDataCount.toString() + ";"
+                + eventNumber.toString() + ";"
+                + sensorData.x_value.toString() + ";"
+                + sensorData.y_value.toString() + ";"
+                + sensorData.z_value.toString())
+    }
+
+    private fun writeSensorDatasToFile(){
+        val path = context?.getExternalFilesDir(null)
+        val csvsDirectory = File(path, "measurements")
+        csvsDirectory.mkdirs()
+
+        val file = File(csvsDirectory,"sensordatas.csv")
+        Log.i("MeasureResultFragment:CSV", "CSV file path is \'"+file.path.toString()+"\'")
+        if(!file.exists()){
+            file.appendText("phoneID;date;sensorData;eventNumber;x;y;z\n")
+            Log.i("MeasureResultFragment:CSV", "sensordatas.csv created, added csv header.")
+        }
+        var eventNumber = 0
+        for (item : SensorData in viewModel.sensorData1.value!!.toTypedArray()){
+            eventNumber++
+            file.appendText(convertSensorDataToString(1,eventNumber,item) + "\n")
+        }
+        eventNumber = 0
+        for (item : SensorData in viewModel.sensorData1.value!!.toTypedArray()){
+            eventNumber++
+            file.appendText(convertSensorDataToString(2,eventNumber,item) + "\n")
+        }
+        eventNumber = 0
+        for (item : SensorData in viewModel.sensorData1.value!!.toTypedArray()){
+            eventNumber++
+            file.appendText(convertSensorDataToString(3,eventNumber,item)+ "\n")
+        }
+        Log.i("MeasureResultFragment:CSV", "File exists, appending sensordatas.csv")
+    }
+
 }
