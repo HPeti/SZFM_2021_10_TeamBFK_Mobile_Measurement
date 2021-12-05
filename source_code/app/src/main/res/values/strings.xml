@@ -8,7 +8,7 @@
     <string name="welcome">Üdvözlünk az alkalmazásban!</string>
     <string name="welcome_info">Információ</string>
     <string name="version">Verziószám:</string>
-    <string name="version_number">0.0.4</string>
+    <string name="version_number">0.0.5</string>
     <string name="copyright">\@TeamBFK 2021</string>
     <string name="measureDistanceText">Mérni kívánt távolság:</string>
     <string name="distance1">40cm</string>
