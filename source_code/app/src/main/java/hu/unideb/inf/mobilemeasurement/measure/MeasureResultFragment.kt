@@ -63,10 +63,17 @@ class MeasureResultFragment : Fragment() {
         }
 
         setupClass(binding)
+        binding.phoneIDTextView.text = "Telefon azonosító: " + viewModel.phone_ID.value.toString()
+        binding.measurementIDTextView.text = "Mérés opcionális neve: " + viewModel.measure_ID.value.toString()
+        binding.etcInfoTextView.text = ("Mintavételezés: " + viewModel.sampling_Rate.value.toString()
+                + " us, orientáció: "+ viewModel.orientation.value.toString())
+        binding.expectedDistanceTextView.text = ("Mért távolság: " + viewModel.distance.value.toString()
+                +" cm")
+        measure1Value.text = "1. mérés eredménye: "+ viewModel.calculatedDistance1.value.toString() + " cm"
+        measure2Value.text = "2. mérés eredménye: "+ viewModel.calculatedDistance2.value.toString() + " cm"
+        measure3Value.text = "3. mérés eredménye: "+ viewModel.calculatedDistance3.value.toString() + " cm"
+        binding.Date.text = ("Dátum azonosító: " + currentDate)
 
-        measure1Value.setText(viewModel.phone_ID.value.toString())
-        measure2Value.setText(viewModel.measure_ID.value.toString())
-        measure3Value.setText(currentDate)
         writeMeasurementToFile()
         writeSensorDatasToFile()
 
