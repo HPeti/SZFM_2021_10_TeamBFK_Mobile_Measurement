@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import hu.unideb.inf.mobilemeasurement.R
 import hu.unideb.inf.mobilemeasurement.databinding.FragmentMeasureResultBinding
@@ -18,9 +19,19 @@ class MeasureResultFragment : Fragment() {
     private lateinit var measure1Value : TextView
     private lateinit var measure2Value : TextView
     private lateinit var measure3Value : TextView
+    //private var viewModel: MeasureViewModel by
+
     private val phoneID : String = android.os.Build.BRAND+"_"+android.os.Build.MODEL
     private val dateFormatter : SimpleDateFormat= SimpleDateFormat("yyyy_MM_dd_hh_mm_ss", Locale.US);
     private val currentDate = dateFormatter.format(Calendar.getInstance().getTime())
+
+    private fun setupClass(binding : FragmentMeasureResultBinding){
+        measure1Value = binding.measure1Value
+        measure2Value = binding.measure2Value
+        measure3Value = binding.measure3Value
+        //viewModel = ViewModelProvider(this).get(MeasureViewModel::class.java)
+        //binding.measureViewModel = viewModel
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,9 +44,7 @@ class MeasureResultFragment : Fragment() {
             view.findNavController().navigate(MeasureResultFragmentDirections.actionMeasureResultFragmentToHomeFragment())
         }
 
-        measure1Value = binding.measure1Value
-        measure2Value = binding.measure2Value
-        measure3Value = binding.measure3Value
+        setupClass(binding)
 
         measure1Value.setText(phoneID)
         //measure2Value.setText()
