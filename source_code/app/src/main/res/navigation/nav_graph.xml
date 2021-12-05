@@ -108,15 +108,15 @@
             app:argType="string" />
         <argument
             android:name="sensorData1"
-            app:argType="float[]"
+            app:argType="hu.unideb.inf.mobilemeasurement.database.SensorData[]"
             app:nullable="true" />
         <argument
             android:name="sensorData2"
-            app:argType="float[]"
+            app:argType="hu.unideb.inf.mobilemeasurement.database.SensorData[]"
             app:nullable="true" />
         <argument
             android:name="sensorData3"
-            app:argType="float[]"
+            app:argType="hu.unideb.inf.mobilemeasurement.database.SensorData[]"
             app:nullable="true" />
         <argument
             android:name="calculatedDistance1"
