@@ -20,8 +20,7 @@
     <fragment
         android:id="@+id/measureStartFragment"
         android:name="hu.unideb.inf.mobilemeasurement.measure.MeasureStartFragment"
-        android:label="Mérés indítása"
-        tools:layout="@layout/fragment_measure_start" >
+        android:label="Mérés indítása">
         <action
             android:id="@+id/action_measureStartFragment_to_measureStopFragment"
             app:destination="@id/measureStopFragment"
@@ -127,5 +126,8 @@
         <argument
             android:name="calculatedDistance3"
             app:argType="java.lang.Double" />
+        <action
+            android:id="@+id/action_measureResultFragment_to_measureStartFragment"
+            app:destination="@id/measureStartFragment" />
     </fragment>
 </navigation>

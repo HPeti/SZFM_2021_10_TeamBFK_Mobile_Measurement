@@ -58,6 +58,9 @@ class MeasureResultFragment : Fragment() {
         binding.mainPageButton.setOnClickListener { view ->
             view.findNavController().navigate(MeasureResultFragmentDirections.actionMeasureResultFragmentToHomeFragment())
         }
+        binding.StartNewButton.setOnClickListener { view ->
+            view.findNavController().navigate(MeasureResultFragmentDirections.actionMeasureResultFragmentToMeasureStartFragment())
+        }
 
         setupClass(binding)
 
