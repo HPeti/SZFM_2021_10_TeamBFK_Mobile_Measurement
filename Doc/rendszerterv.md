@@ -55,6 +55,7 @@ Ide vesszük fel majd a mérföldköveket, amelyek sprintek között fog törté
 | 2021. 11. 14. |     v0.0.2     | Menürendszer újradolgozása, Fragment kezelés, gombokkal történő navigáció dataBinding használata ettől a verziótól |
 | 2021. 11. 21. |     v0.0.3     | Adatbázis tesztelés (Oracle/MySQL JDBC), CSV fájlkezelés tesztelése |
 | 2021. 11. 28. |     v0.0.4     | Mérés folyamatának kezelésének megvalósítása, adatbázis szerkezetének újragondolása CSV kimenetbe |
+| 2021. 12. 05. |     v0.0.5     | Mérés adatainak kiírása CSV fájlokba, mérés folyamatának és beállításainak finomhangolása, kijelző forgatásának kikapcsolása app-on belül |
 
 ## 3. Üzleti folyamatok modellje
 
