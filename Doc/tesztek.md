@@ -735,3 +735,49 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelt komponens leírása**: Restart gomb kattinthatósága  
 **Várt eredmény**:              A restart gombra addig nem lehet rányomni, amíg nincs futó mérés, vagy legalább egy mérés nem futott le.  
 **Kapott eredmény**:            A restart gombot addig nem lehet megnyomni, amíg nincs futó mérés, vagy legalább egy mérés nem futott le. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)   
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 22:45  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: MeasureResultFragment tesztelése  
+**Várt eredmény**:              Az adatok viewmodel és safeargs segítségével átkerül jó formátumba a megadott helyekre  
+**Kapott eredmény**:            A viewmodel segítségével elérhető a korábbi fragmentekről bekért adatok. &#9989;  
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)   
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 22:50  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: Mérés tesztelése  
+**Várt eredmény**:              40 cm esetén körülbelül 40 cm adatot kapunk szenzoradatként.  
+**Kapott eredmény**:            Túl nagy távolság eltérés, sebesség inkonzisztens. &#10060; 
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)   
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 23:01  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: Mérés tesztelése  
+**Várt eredmény**:              100 cm esetén körülbelül 100 cm adatot kapunk szenzoradatként.  
+**Kapott eredmény**:            Túl nagy távolság eltérés, sebesség inkonzisztens. &#10060;
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)   
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 23:06  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: Mérés tesztelése  
+**Várt eredmény**:              200 cm esetén körülbelül 200 cm adatot kapunk szenzoradatként.  
+**Kapott eredmény**:            Túl nagy távolság eltérés, sebesség inkonzisztens. &#10060; 
+
+---
