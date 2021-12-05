@@ -13,9 +13,7 @@ import androidx.navigation.findNavController
 import hu.unideb.inf.mobilemeasurement.R
 import hu.unideb.inf.mobilemeasurement.databinding.FragmentMeasureStartBinding
 import android.widget.Toast
-import java.text.SimpleDateFormat
-import java.util.*
-import kotlin.collections.ArrayList
+import hu.unideb.inf.mobilemeasurement.database.SensorData
 
 
 class MeasureStartFragment : Fragment() {
@@ -39,9 +37,9 @@ class MeasureStartFragment : Fragment() {
             "",
             0,
             "",
-            arrayListOf<Float>(),
-            arrayListOf<Float>(),
-            arrayListOf<Float>(),
+            arrayListOf<SensorData>(),
+            arrayListOf<SensorData>(),
+            arrayListOf<SensorData>(),
             0.0,
             0.0,
             0.0)
