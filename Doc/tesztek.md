@@ -244,6 +244,72 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ## Mérés (MeasureStartFragment, MeasureStopFragment)
 
+**Tesztelést elvégezte**:       [HPeti](https://github.com/HPeti)  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 06. 0:07  
+**Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
+**Android verziója**:           Android 11   
+**Tesztelt komponens leírása**: Restart gomb működése  
+**Várt eredmény**:              Restart gomb csak már elindított mérés esetén kattintható  
+**Kapott eredmény**:            Csak elindított mérés esetén kattintható a restart gomb. Default értékek jelennek meg megnyomás esetén &#9989;   
+
+---
+
+**Tesztelést elvégezte**:       [HPeti](https://github.com/HPeti)  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 06. 0:08  
+**Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
+**Android verziója**:           Android 11   
+**Tesztelt komponens leírása**: Restart gomb működése  
+**Várt eredmény**:              Restart gomb nem kattintható elindított mérés nélkül  
+**Kapott eredmény**:            Nem kattintható a restart gomb elindított mérés nélkül. &#9989;   
+
+---
+
+**Tesztelést elvégezte**:       [HPeti](https://github.com/HPeti)  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 23:42  
+**Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
+**Android verziója**:           Android 11   
+**Tesztelt komponens leírása**: MeasureResultFragment tesztelése  
+**Várt eredmény**:              Az adatok viewmodel és safeargs segítségével átkerül jó formátumba a megadott helyekre  
+**Kapott eredmény**:            A viewmodel segítségével elérhető a korábbi fragmentekről bekért adatok. &#9989;   
+
+---
+
+**Tesztelést elvégezte**:       [HPeti](https://github.com/HPeti)  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 23:58  
+**Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
+**Android verziója**:           Android 11   
+**Tesztelt komponens leírása**: Mérés tesztelése  
+**Várt eredmény**:              40 cm esetén körülbelül 40 cm adatot kapunk szenzoradatként.  
+**Kapott eredmény**:            Túl nagy távolság eltérés, sebesség inkonzisztens. &#10060;   
+
+---
+
+**Tesztelést elvégezte**:       [HPeti](https://github.com/HPeti)  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 06. 0:00  
+**Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
+**Android verziója**:           Android 11   
+**Tesztelt komponens leírása**: Mérés tesztelése  
+**Várt eredmény**:              100 cm esetén körülbelül 100 cm adatot kapunk szenzoradatként.  
+**Kapott eredmény**:            Túl nagy távolság eltérés, sebesség inkonzisztens. &#10060;   
+
+---
+
+**Tesztelést elvégezte**:       [HPeti](https://github.com/HPeti)  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 06. 0:02  
+**Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
+**Android verziója**:           Android 11   
+**Tesztelt komponens leírása**: Mérés tesztelése  
+**Várt eredmény**:              200 cm esetén körülbelül 200 cm adatot kapunk szenzoradatként.  
+**Kapott eredmény**:            Túl nagy távolság eltérés, sebesség inkonzisztens. &#10060;   
+
+---
+
 **Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
 **App verziója**:               v0.0.3  
 **Tesztelés ideje**:            2021. 11. 27. 20:10  
@@ -547,6 +613,49 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ## CSV tesztelés (CsvTestFragment)
 
+**Tesztelést elvégezte**:       [HPeti](https://github.com/HPeti)  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 23:42  
+**Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
+**Android verziója**:           Android 11   
+**Tesztelt komponens leírása**: CSV fájlok kezelése  
+**Várt eredmény**:              Első mérés esetén létrehozza a measurements.csv fájlt az applikáció fejléccel együtt.  
+**Kapott eredmény**:            Létrejött a fájl, megfelelő fejléccel és az új adatokkal &#9989;   
+
+---
+
+**Tesztelést elvégezte**:       [HPeti](https://github.com/HPeti)  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 23:43  
+**Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
+**Android verziója**:           Android 11   
+**Tesztelt komponens leírása**: CSV fájlok kezelése  
+**Várt eredmény**:              Nem első mérés esetén kibővíti a measurements.csv fájlt és nem törli az előzően eltárolt mérések eredményeit.  
+**Kapott eredmény**:            Bővítette a fájlt, nem törölt adatot, megfelelő formátum. &#9989;   
+
+---
+
+**Tesztelést elvégezte**:       [HPeti](https://github.com/HPeti)  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 23:44  
+**Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
+**Android verziója**:           Android 11   
+**Tesztelt komponens leírása**: CSV fájlok kezelése  
+**Várt eredmény**:              Első mérés esetén létrehozza a sensordatas.csv fájlt az applikáció fejléccel együtt.  
+**Kapott eredmény**:            Létrejött a fájl, megfelelő fejléccel és az új adatokkal &#9989;   
+
+---
+
+**Tesztelést elvégezte**:       [HPeti](https://github.com/HPeti)  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 23:50  
+**Telefon modellje**:           Samsung Galaxy A70 (SM-A705FN/DS)  
+**Android verziója**:           Android 11   
+**Tesztelt komponens leírása**: CSV fájlok kezelése  
+**Várt eredmény**:              Nem első mérés esetén kibővíti a sensordatas.csv fájlt és nem törli az előzően eltárolt szenzor adatok eredményeit.  
+**Kapott eredmény**:            Bővítette a fájlt, nem törölt adatot, megfelelő formátum. &#9989;   
+
+---
 
 **Tesztelést elvégezte**:       [HPeti](https://github.com/HPeti)  
 **App verziója**:               v0.0.3  
