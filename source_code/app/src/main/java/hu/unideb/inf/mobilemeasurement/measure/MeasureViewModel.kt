@@ -5,7 +5,17 @@ import androidx.lifecycle.ViewModel
 import java.util.*
 import kotlin.collections.ArrayList
 
-class MeasureViewModel : ViewModel(){
+class MeasureViewModel(distance : Int,
+                       measure_ID : String,
+                       phone_ID : String,
+                       sampling_Rate : Int,
+                       orientation : String,
+                       sensorData1 : ArrayList<Float>,
+                       sensorData2 : ArrayList<Float>,
+                       sensorData3 : ArrayList<Float>,
+                       calculatedDistance1 : Double,
+                       calculatedDistance2 : Double,
+                       calculatedDistance3 : Double) : ViewModel(){
 
     val distance: MutableLiveData<Int> by lazy{
         MutableLiveData<Int>()
@@ -27,10 +37,6 @@ class MeasureViewModel : ViewModel(){
         MutableLiveData<String>()
     }
 
-    val date : MutableLiveData<Date> by lazy{
-        MutableLiveData<Date>()
-    }
-
     val sensorData1 : MutableLiveData<ArrayList<Float>> by lazy {
         MutableLiveData<ArrayList<Float>>()
     }
@@ -50,4 +56,17 @@ class MeasureViewModel : ViewModel(){
         MutableLiveData<Double>()
     }
 
+    init {
+        this.distance.value = distance
+        this.measure_ID.value = measure_ID
+        this.phone_ID.value = phone_ID
+        this.sampling_Rate.value = sampling_Rate
+        this.orientation.value = orientation
+        this.sensorData1.value = sensorData1
+        this.sensorData2.value = sensorData2
+        this.sensorData3.value = sensorData3
+        this.calculatedDistance1.value = calculatedDistance1
+        this.calculatedDistance2.value = calculatedDistance2
+        this.calculatedDistance3.value = calculatedDistance3
+    }
 }

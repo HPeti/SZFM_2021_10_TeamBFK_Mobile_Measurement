@@ -12,7 +12,6 @@ class MeasureViewModelFactory (
     private val phone_ID : String,
     private val samplingRate : Int,
     private val orientation : String,
-    private val date : Date,
     private val sensorData1 : ArrayList<Float>,
     private val sensorData2 : ArrayList<Float>,
     private val sensorData3 : ArrayList<Float>,
@@ -23,7 +22,17 @@ class MeasureViewModelFactory (
     ) : ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(MeasureViewModel::class.java)){
-            return MeasureViewModel() as T
+            return MeasureViewModel(distance,
+                measure_ID,
+                phone_ID,
+                samplingRate,
+                orientation,
+                sensorData1,
+                sensorData2,
+                sensorData3,
+                calculatedDistance1,
+                calculatedDistance2,
+                calculatedDistance3) as T
         }
         throw IllegalArgumentException("Unknown ViewModel class")
     }
