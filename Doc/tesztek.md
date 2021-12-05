@@ -256,6 +256,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 ---
 
 **Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 5. 23:10  
+**Telefon modellje**:           Samsung Galaxy A40  
+**Android verziója**:           Android 11  
+**Tesztelt komponens leírása**: Mérés indítása megjelenése  
+**Várt eredmény**:              A mérés indítása felület megfelelően jelenik meg  
+**Kapott eredmény**:            A mérés indítása felület alló helyzetben az oldal bal szélét vágja le, fekvő helyzet le lett tiltva. &#10060;
+
+---
+
+**Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
 **App verziója**:               v0.0.3  
 **Tesztelés ideje**:            2021. 11. 27. 20:10  
 **Telefon modellje**:           Samsung Galaxy A40  
@@ -283,7 +294,51 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Android verziója**:           Android 11  
 **Tesztelt komponens leírása**: A mérés leállítása felület gombjainak működése  
 **Várt eredmény**:              A mérés leállítása felület gombjai benyomásával eléri a szenzorokat és megjeleníti azokat  
-**Kapott eredmény**:            A mérés leállítása felület gombjai benyomásával eléri a szenzorokat és megjeleníti azokat (a restart gom még nem működik) &#9989;
+**Kapott eredmény**:            A mérés leállítása felület gombjai benyomásával eléri a szenzorokat és megjeleníti azokat (a restart gomb még nem működik) &#9989;
+
+---
+
+**Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 5. 23:10  
+**Telefon modellje**:           Samsung Galaxy A40  
+**Android verziója**:           Android 11  
+**Tesztelt komponens leírása**: A mérés leállítása felület gombjainak működése  
+**Várt eredmény**:              A mérés leállítása felület gombjai benyomásával eléri a szenzorokat és megjeleníti azokat + mostmár a distanc-re is kihatással van  
+**Kapott eredmény**:            A mérés leállítása felület gombjai benyomásával eléri a szenzorokat és megjeleníti azokat + mostmár a distanc-re is kihatással van &#9989;
+
+---
+
+**Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 5. 23:10  
+**Telefon modellje**:           Samsung Galaxy A40  
+**Android verziója**:           Android 11  
+**Tesztelt komponens leírása**: A mérés leállítása felület befejezése  
+**Várt eredmény**:              A mérés leállítása felület a mérés átdob a mérés eredménye oldalra  
+**Kapott eredmény**:            A mérés leállítása felület a mérés átdob a mérés eredménye oldalra &#9989;  
+
+---
+
+**Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 5. 23:10  
+**Telefon modellje**:           Samsung Galaxy A40  
+**Android verziója**:           Android 11  
+**Tesztelt komponens leírása**: A mérés eredménye felület a megfelelő adatok megjelenítése  
+**Várt eredmény**:              A mérés eredménye felület megfelelő kezdő adatokkat jeleníti meg(id, mintavételezés, ...)  
+**Kapott eredmény**:            A mérés eredménye felület megfelelő kezdő adatokkat jeleníti meg(id, mintevételezés, ...) &#9989;  
+
+---
+
+**Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 5. 23:10  
+**Telefon modellje**:           Samsung Galaxy A40  
+**Android verziója**:           Android 11  
+**Tesztelt komponens leírása**: A mérés eredménye felület a megfelelő adatok megjelenítése  
+**Várt eredmény**:              A mérés eredménye felület megfelelő mérési adatokkat jeleníti meg(id, mintavételezés, ...)  
+**Kapott eredmény**:            A mérés eredménye felület megfelelő mérési adatokkat jeleníti meg(id, mintevételezés, ...) &#9989;  
 
 ---
 
