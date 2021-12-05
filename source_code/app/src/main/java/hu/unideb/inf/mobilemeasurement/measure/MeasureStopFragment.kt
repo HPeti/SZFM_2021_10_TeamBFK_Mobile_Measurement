@@ -161,10 +161,10 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
                 if(zVal < threshold && zVal > thresholdNegative){
                     zVal = 0F
                 }
-                deltaT = ((event.timestamp / 10000000).toDouble() - oldTimeMS) / 1000 //seconds!
+                deltaT = ((event.timestamp / 1000000).toDouble() - oldTimeMS) / 1000 //seconds!
 
                 //var acceleration : Double = sqrt(xVal.toDouble().pow(2.0) + yVal.toDouble().pow(2.0) + zVal.toDouble().pow(2.0));
-                oldVelocity  = xVal.toDouble() * deltaT + yVal.toDouble() * deltaT + zVal.toDouble() * deltaT
+                oldVelocity  = abs(xVal.toDouble()) * deltaT + abs(yVal.toDouble()) * deltaT + abs(zVal.toDouble()) * deltaT
 
                 //oldVelocity = abs(oldVelocity - acceleration * deltaT)
 
@@ -189,9 +189,9 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
                 z_value.setText("Z: " + zVal)
                 timeText.setText("Timestamp: " + event.timestamp)
                 deltaTimeText.setText("delta time: "+ deltaT + " sec," + " velocity: "+ oldVelocity)
-                xDistanceText.setText("X distance: " + xDistance.toFloat() * 100000 + " cm")
+                xDistanceText.setText("X distance: " + abs(xDistance.toFloat()) * 100 + " cm")
             }
-            oldTimeMS =(event.timestamp / 10000000 ).toDouble()
+            oldTimeMS =(event.timestamp / 1000000 ).toDouble()
         }
     }
 
