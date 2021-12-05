@@ -75,6 +75,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ---
 
+**Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 5. 23:00  
+**Telefon modellje**:           Samsung Galaxy A40  
+**Android verziója**:           Android 11  
+**Tesztelt komponens leírása**: Menü megjelenése  
+**Várt eredmény**:              A jelenleg kiválasztott elem külön kiemelve megjelenik a menüben.  
+**Kapott eredmény**:            A menü már megnyitható, de néha összeakad más hasonló funkcióval amit úgyanígy lehet elérni, vagy csak néha beakad és csak a 3. húzásra jön teljesen elő.(Tok használata mellet szinte lehetelen a főmenü ilyen elérése) &#9989; 
+
+---
+
 **Tesztelést elvégezte**:       [HPeti](https://github.com/HPeti)  
 **App verziója**:               v0.0.3  
 **Tesztelés ideje**:            2021. 11. 27. 14:51  
@@ -140,6 +151,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelt komponens leírása**: Főoldal megjelenése  
 **Várt eredmény**:              A főoldal elemei betöltenek, képpel, szöveggel és gombbal.  
 **Kapott eredmény**:            A főoldalon lévő szöveg megjelenik, de az álló helyzetben a kép nem kelenik meg, míg a fekvőhelyzetben a formázás teljesen szétcsúszik, egymásba esik. &#10060; 
+
+---
+
+**Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 5. 23:00  
+**Telefon modellje**:           Samsung Galaxy A40  
+**Android verziója**:           Android 11  
+**Tesztelt komponens leírása**: Főoldal megjelenése  
+**Várt eredmény**:              A főoldal elemei betöltenek, képpel, szöveggel és gombbal.  
+**Kapott eredmény**:            A főoldalon lévő szöveg megjelenik, de az álló helyzetben a kép nem kelenik meg, míg a fekvő helyzet le lett tiltva. &#10060;
 
 ---
 
@@ -438,8 +460,21 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Telefon modellje**:           Samsung Galaxy A40  
 **Android verziója**:           Android 11  
 **Tesztelt komponens leírása**: Adatbáziskapcsolat kialakítása  
-**Várt eredmény**:              Az adatbázis kapcsolat létrejön lokális hálózaton belül    
+**Várt eredmény**:              Az adatbázis kapcsolat létrejön lokális hálózaton belül   
+**Kapott eredmény**:            Az adatbázisra történő kapcsolódás összeomlasztja az alkalmazást. &#10060;  
 **Oka**:                        Nem található a DriverAction-nek szükséges osztály (Oracle JDBC és MySQL JDBC driver is kipróbálva).  
+
+---
+
+**Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 5. 23:00  
+**Telefon modellje**:           Samsung Galaxy A40  
+**Android verziója**:           Android 11  
+**Tesztelt komponens leírása**: Adatbáziskapcsolat kialakítása  
+**Várt eredmény**:              Az adatbázis kapcsolat létrejön lokális hálózaton belül   
+**Kapott eredmény**:            Az adatbázisra történő kapcsolódás összeomlasztja az alkalmazást. &#10060;  
+**Oka**:                        Nem található a DriverAction-nek szükséges osztály (Oracle JDBC és MySQL JDBC driver is kipróbálva). (nem változott)
 
 ---
 
