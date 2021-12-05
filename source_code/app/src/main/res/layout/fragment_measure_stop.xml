@@ -120,5 +120,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/deltaTimeText" />
 
+        <TextView
+            android:id="@+id/xVelocityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:text="X velocity: -"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/xDistanceText" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
