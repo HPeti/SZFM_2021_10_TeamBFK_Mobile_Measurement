@@ -91,5 +91,41 @@
         <action
             android:id="@+id/action_measureResultFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <argument
+            android:name="distance"
+            app:argType="integer" />
+        <argument
+            android:name="measure_ID"
+            app:argType="string" />
+        <argument
+            android:name="phone_ID"
+            app:argType="string" />
+        <argument
+            android:name="sampling_Rate"
+            app:argType="integer" />
+        <argument
+            android:name="orientation"
+            app:argType="string" />
+        <argument
+            android:name="sensorData1"
+            app:argType="float[]"
+            app:nullable="true" />
+        <argument
+            android:name="sensorData2"
+            app:argType="float[]"
+            app:nullable="true" />
+        <argument
+            android:name="sensorData3"
+            app:argType="float[]"
+            app:nullable="true" />
+        <argument
+            android:name="calculatedDistance1"
+            app:argType="java.lang.Double" />
+        <argument
+            android:name="calculatedDistance2"
+            app:argType="java.lang.Double" />
+        <argument
+            android:name="calculatedDistance3"
+            app:argType="java.lang.Double" />
     </fragment>
 </navigation>
