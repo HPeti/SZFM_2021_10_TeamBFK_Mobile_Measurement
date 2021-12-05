@@ -42,6 +42,21 @@
             app:exitAnim="@anim/to_left"
             app:popEnterAnim="@anim/from_left"
             app:popExitAnim="@anim/to_right" />
+        <argument
+            android:name="distance"
+            app:argType="integer" />
+        <argument
+            android:name="measure_ID"
+            app:argType="string" />
+        <argument
+            android:name="phone_ID"
+            app:argType="string" />
+        <argument
+            android:name="sampling_Rate"
+            app:argType="integer" />
+        <argument
+            android:name="orientation"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/infoFragment"
