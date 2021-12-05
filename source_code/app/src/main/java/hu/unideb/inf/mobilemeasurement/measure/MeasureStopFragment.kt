@@ -167,6 +167,10 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
         deltaT = 0.0
         oldVelocity = 0.0
         distance = 0.0
+        oldTimeMS = 0.0
+        xVelocity = 0.0
+        yVelocity = 0.0
+        zVelocity = 0.0
     }
 
     override fun onSensorChanged(event: SensorEvent?) {
