@@ -1087,6 +1087,5 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelt komponens leírása**: Mérés tesztelése  
 **Várt eredmény**:              200 cm esetén körülbelül 200 cm adatot kapunk szenzoradatként.  
 **Kapott eredmény**:            Túl nagy távolság eltérés, sebesség inkonzisztens. &#10060; 
->>>>>>> 42ae05757703aa4d6d209ab026f0511ef2caaac9
 
 ---
