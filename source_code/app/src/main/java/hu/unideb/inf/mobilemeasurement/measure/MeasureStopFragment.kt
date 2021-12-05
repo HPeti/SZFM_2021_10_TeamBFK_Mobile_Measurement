@@ -159,7 +159,7 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
         sensorManager = activity?.getSystemService(SENSOR_SERVICE) as SensorManager
         //its us not ms! (1ms = 1000 us)
         linearAccelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION).also {
-            sensorManager.registerListener(this, it, 10000)
+            sensorManager.registerListener(this, it, viewModel.sampling_Rate.value!!.toInt())
         }
     }
 
