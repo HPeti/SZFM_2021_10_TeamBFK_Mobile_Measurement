@@ -48,7 +48,7 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
     /** Measurement values **/
     private var deltaT : Double = 0.0
     private var oldTimeMS : Double = 0.0
-    private var xDistance : Double = 0.0
+    private var distance : Double = 0.0
     private var currentNumberOfMeasures : Int = 0
     private var isMeasureRunning : Boolean = false
     private var oldVelocity : Double = 0.0
@@ -120,9 +120,9 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
         binding.stopMeasureButton.setOnClickListener{ view ->
             if(isMeasureRunning){
                 when (currentNumberOfMeasures){
-                    1 -> viewModel.calculatedDistance1.value = xDistance
-                    2 -> viewModel.calculatedDistance2.value = xDistance
-                    3 -> viewModel.calculatedDistance3.value = xDistance
+                    1 -> viewModel.calculatedDistance1.value = distance
+                    2 -> viewModel.calculatedDistance2.value = distance
+                    3 -> viewModel.calculatedDistance3.value = distance
                 }
                 sensorManager.unregisterListener(this)
                 isMeasureRunning = false
@@ -166,7 +166,7 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
     private fun initMeasurementValues(){
         deltaT = 0.0
         oldVelocity = 0.0
-        xDistance = 0.0
+        distance = 0.0
     }
 
     override fun onSensorChanged(event: SensorEvent?) {
@@ -193,8 +193,16 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
                 xVelocity += xVal.toDouble() * deltaT
                 yVelocity += yVal.toDouble() * deltaT
                 zVelocity += zVal.toDouble() * deltaT
-                xDistance += abs(xVelocity * deltaT)
-
+                if(viewModel.orientation.value == "vertical") {
+                    distance += abs(xVelocity * deltaT)
+                    xDistanceText.text = "X distance: " + distance * 100 + " cm"
+                    xVelocityTextView.text = "X velocity: " + xVelocity
+                }
+                else{
+                    distance += abs(yVelocity * deltaT)
+                    xDistanceText.text = "Y distance: " + distance * 100 + " cm"
+                    xVelocityTextView.text = "Y velocity: " + yVelocity
+                }
                 /* s = u * t + 1/2 * a * t^2
                    s = distance
                    u = initial velocity
@@ -212,8 +220,7 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
                 z_value.text = "Z: " + zVal
                 timeText.text = "Timestamp: " + event.timestamp
                 deltaTimeText.text = "delta time: "+ deltaT + " sec," + " velocity: "+ oldVelocity
-                xDistanceText.text = "X distance: " + xDistance * 100 + " cm"
-                xVelocityTextView.text = "X velocity: " + xVelocity
+
 
                 when (currentNumberOfMeasures){
                     1 -> viewModel.sensorData1.value!!.add(SensorData(xVal,yVal,zVal))
