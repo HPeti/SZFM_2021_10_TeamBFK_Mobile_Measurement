@@ -6,7 +6,6 @@ import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.os.Bundle
-import android.util.Log
 
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -17,6 +16,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import hu.unideb.inf.mobilemeasurement.R
+import hu.unideb.inf.mobilemeasurement.database.SensorData
 import hu.unideb.inf.mobilemeasurement.databinding.FragmentMeasureStopBinding
 import kotlin.collections.ArrayList
 import kotlin.math.abs
@@ -27,7 +27,7 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
     /** Setup values **/
     private val maxNumberOfMeasures : Int = 3
     private val threshold : Double = 0.05
-    private val thresholdNegative : Double = threshold * -1
+    //private val thresholdNegative : Double = threshold * -1
 
     /**Sensors**/
     private lateinit var sensorManager: SensorManager
@@ -43,6 +43,7 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
     private lateinit var completionText: TextView
     private lateinit var viewModel : MeasureViewModel
     private lateinit var viewModelFactory : MeasureViewModelFactory
+    private lateinit var xVelocityTextView : TextView
 
     /** Measurement values **/
     private var deltaT : Double = 0.0
@@ -51,9 +52,15 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
     private var currentNumberOfMeasures : Int = 0
     private var isMeasureRunning : Boolean = false
     private var oldVelocity : Double = 0.0
-    private var sensorData1 : ArrayList<Float> = ArrayList()
-    private var sensorData2 : ArrayList<Float> = ArrayList()
-    private var sensorData3 : ArrayList<Float> = ArrayList()
+    private var xVelocity : Double = 0.0
+    private var yVelocity : Double = 0.0
+    private var zVelocity : Double = 0.0
+    private var sensorData1 : ArrayList<SensorData> = ArrayList()
+    private var sensorData2 : ArrayList<SensorData> = ArrayList()
+    private var sensorData3 : ArrayList<SensorData> = ArrayList()
+    private var calculatedDistance1 : Double = 0.0
+    private var calculatedDistance2 : Double = 0.0
+    private var calculatedDistance3 : Double = 0.0
 
     fun setupBinding(binding: FragmentMeasureStopBinding){
         x_value = binding.xText
@@ -63,6 +70,7 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
         deltaTimeText = binding.deltaTimeText
         xDistanceText = binding.xDistanceText
         completionText = binding.completionTextView
+        xVelocityTextView = binding.xVelocityTextView
 
         completionText.text = currentNumberOfMeasures.toString() + " / " + maxNumberOfMeasures
 
@@ -74,9 +82,9 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
             sensorData1,
             sensorData2,
             sensorData3,
-            0.0,
-            0.0,
-            0.0)
+            calculatedDistance1,
+            calculatedDistance2,
+            calculatedDistance3)
         viewModel = ViewModelProvider(this, viewModelFactory).get(MeasureViewModel::class.java)
         binding.measureViewModel = viewModel
     }
@@ -109,6 +117,11 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
 
         binding.stopMeasureButton.setOnClickListener{ view ->
             if(isMeasureRunning){
+                when (currentNumberOfMeasures){
+                    1 -> viewModel.calculatedDistance1.value = xDistance
+                    2 -> viewModel.calculatedDistance2.value = xDistance
+                    3 -> viewModel.calculatedDistance3.value = xDistance
+                }
                 sensorManager.unregisterListener(this)
                 isMeasureRunning = false
                 if(currentNumberOfMeasures == maxNumberOfMeasures){
@@ -119,12 +132,12 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
                             viewModel.phone_ID.value.toString(),
                             viewModel.sampling_Rate.value!!.toInt(),
                             viewModel.orientation.value.toString(),
-                            null,
-                            null,
-                            null,
-                            0.0,
-                            0.0,
-                            0.0))
+                            viewModel.sensorData1.value!!.toTypedArray(),
+                            viewModel.sensorData2.value!!.toTypedArray(),
+                            viewModel.sensorData3.value!!.toTypedArray(),
+                            viewModel.calculatedDistance1.value!!.toDouble(),
+                            viewModel.calculatedDistance2.value!!.toDouble(),
+                            viewModel.calculatedDistance3.value!!.toDouble()))
                 }
             }
         }
@@ -151,26 +164,25 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
                 var xVal = event.values[0]
                 var yVal = event.values[1]
                 var zVal = event.values[2]
-
-                if(xVal < threshold && xVal > thresholdNegative){
+                if(sqrt(xVal.pow(2) + yVal.pow(2) + zVal.pow(2)) < threshold){
                     xVal = 0F
-                }
-                if(yVal < threshold && yVal > thresholdNegative){
                     yVal = 0F
-                }
-                if(zVal < threshold && zVal > thresholdNegative){
                     zVal = 0F
                 }
-                deltaT = ((event.timestamp / 1000000).toDouble() - oldTimeMS) / 1000 //seconds!
 
+                deltaT = ((event.timestamp.toDouble() / 1000000) - oldTimeMS) / 1000 //seconds!
+
+                //old calculations here in comments
                 //var acceleration : Double = sqrt(xVal.toDouble().pow(2.0) + yVal.toDouble().pow(2.0) + zVal.toDouble().pow(2.0));
-                oldVelocity  = abs(xVal.toDouble()) * deltaT + abs(yVal.toDouble()) * deltaT + abs(zVal.toDouble()) * deltaT
-
+                //oldVelocity  = xVal.toDouble() * deltaT + yVal.toDouble() * deltaT + zVal.toDouble() * deltaT
                 //oldVelocity = abs(oldVelocity - acceleration * deltaT)
-
                 //xDistance += oldVelocity * deltaT + 1/2 * acceleration * (deltaT/1000).pow(2)
-                xDistance += oldVelocity * deltaT
 
+                //newer calculations
+                xVelocity += xVal.toDouble() * deltaT
+                yVelocity += yVal.toDouble() * deltaT
+                zVelocity += zVal.toDouble() * deltaT
+                xDistance += abs(xVelocity * deltaT)
 
                 /* s = u * t + 1/2 * a * t^2
                    s = distance
@@ -184,12 +196,13 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
                    t = time (delta t)
                 */
 
-                x_value.setText("X: " + xVal)
-                y_value.setText("Y: " + yVal)
-                z_value.setText("Z: " + zVal)
-                timeText.setText("Timestamp: " + event.timestamp)
-                deltaTimeText.setText("delta time: "+ deltaT + " sec," + " velocity: "+ oldVelocity)
-                xDistanceText.setText("X distance: " + abs(xDistance.toFloat()) * 100 + " cm")
+                x_value.text = "X: " + xVal
+                y_value.text = "Y: " + yVal
+                z_value.text = "Z: " + zVal
+                timeText.text = "Timestamp: " + event.timestamp
+                deltaTimeText.text = "delta time: "+ deltaT + " sec," + " velocity: "+ oldVelocity
+                xDistanceText.text = "X distance: " + xDistance * 100 + " cm"
+                xVelocityTextView.text = "X velocity: " + xVelocity
             }
             oldTimeMS =(event.timestamp / 1000000 ).toDouble()
         }
