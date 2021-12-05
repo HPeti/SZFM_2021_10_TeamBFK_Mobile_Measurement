@@ -55,11 +55,11 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 **Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
 **App verziója**:               v0.0.3  
-**Tesztelés ideje**:            2021. 11. 28. 20:30
-**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
-**Android verziója**:           Android 11 (Red Velvet Cake) 
+**Tesztelés ideje**:            2021. 11. 28. 20:30  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)  
 **Tesztelt komponens leírása**: Menü megjelenése  
-**Várt eredmény**:              A menü elemek betöltenek ikonokkal.
+**Várt eredmény**:              A menü elemek betöltenek ikonokkal.  
 **Kapott eredmény**:            A menü elemek betöltöttek, megfelelő és hozzátartozó ikonokkal &#9989; 
 
 ---
@@ -176,10 +176,10 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ---
 
-**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor) 
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
 **App verziója**:               v0.0.3  
-**Tesztelés ideje**:            2021. 11. 28. 21:09 
-**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Tesztelés ideje**:            2021. 11. 28. 21:09  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
 **Android verziója**:           Android 11 (Red Velvet Cake)   
 **Tesztelt komponens leírása**: Főoldal megjelenése  
 **Várt eredmény**:              A főoldal elemei betöltenek, képpel, szöveggel és gombbal.  
@@ -231,10 +231,10 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ---
 
-**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor) 
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
 **App verziója**:               v0.0.3  
-**Tesztelés ideje**:            2021. 11. 28. 21:20
-**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Tesztelés ideje**:            2021. 11. 28. 21:20  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
 **Android verziója**:           Android 11 (Red Velvet Cake)   
 **Tesztelt komponens leírása**: Főoldal navigációja  
 **Várt eredmény**:              A 'Mérés indítása' gomb átvisz a 'Mérés' oldalra  
@@ -342,12 +342,12 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ---
 
-**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor) 
-**App verziója**:               v0.0.3  
-**Tesztelés ideje**:            2021. 11. 28. 21:29
-**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
-**Android verziója**:           Android 11 (Red Velvet Cake)  
-**Tesztelt komponens leírása**: A mérés leállítása felület gombjainak működése  
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
+**App verziója**:               v0.0.3   
+**Tesztelés ideje**:            2021. 11. 28. 21:29  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)   
+**Tesztelt komponens leírása**: A mérés leállítása felület gombjainak működése   
 **Várt eredmény**:              A mérés leállítása felület gombjai benyomásával eléri a szenzorokat és megjeleníti azokat  
 **Kapott eredmény**:            A mérés leállítása felület gombjai benyomásával eléri a szenzorokat és megjeleníti azokat (a restart gom még nem működik) &#9989;
 
@@ -403,13 +403,13 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ---
 
-**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor) 
-**App verziója**:               v0.0.3  
-**Tesztelés ideje**:            2021. 11. 28. 21:36
-**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
-**Android verziója**:           Android 11 (Red Velvet Cake)  
-**Tesztelt komponens leírása**: Night mode működése  
-**Várt eredmény**:              A Night mode kapcsoló átkapcsol világos és sötét téma között  
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
+**App verziója**:               v0.0.3   
+**Tesztelés ideje**:            2021. 11. 28. 21:36  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)   
+**Tesztelt komponens leírása**: Night mode működése   
+**Várt eredmény**:              A Night mode kapcsoló átkapcsol világos és sötét téma között   
 **Kapott eredmény**:            A gomb megnyomása után az applikáció betölti a sötét és világos módot is, miután ráfrissített az alkalmazás kinézetére &#9989;
 
 ---
@@ -460,13 +460,13 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ---
 
-**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor) 
-**App verziója**:               v0.0.3  
-**Tesztelés ideje**:            2021. 11. 28. 21:42
-**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
-**Android verziója**:           Android 11 (Red Velvet Cake)  
-**Tesztelt komponens leírása**: Verzió szám megjelenése  
-**Várt eredmény**:              A jelenlegi verziószám jól megjelenik az információs oldalon is.  
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
+**App verziója**:               v0.0.3   
+**Tesztelés ideje**:            2021. 11. 28. 21:42  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)   
+**Tesztelt komponens leírása**: Verzió szám megjelenése   
+**Várt eredmény**:              A jelenlegi verziószám jól megjelenik az információs oldalon is.   
 **Kapott eredmény**:            Megjelent a v0.0.3 verziószám az oldalon. &#9989;
 
 ---
@@ -521,6 +521,7 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ---
 
+
 **Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
 **App verziója**:               v0.0.5  
 **Tesztelés ideje**:            2021. 12. 5. 23:00  
@@ -535,8 +536,8 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 **Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor) 
 **App verziója**:               v0.0.3  
-**Tesztelés ideje**:            2021. 11. 28. 21:45
-**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Tesztelés ideje**:            2021. 11. 28. 21:45  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
 **Android verziója**:           Android 11 (Red Velvet Cake)   
 **Tesztelt komponens leírása**: Adatbáziskapcsolat kialakítása  
 **Várt eredmény**:              Az adatbázis kapcsolat létrejön lokális hálózaton belül    
@@ -679,111 +680,159 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 
 ---
 
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 21:30  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: CSV fájl betöltődik  
+**Várt eredmény**:              A CSV fájlok betöltődnek  
+**Kapott eredmény**:            A CSV fájlok betöltődtek. &#9989; 
 
-**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 21:34  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)   
+**Tesztelt komponens leírása**: CSV fájlok feltöltődnek  
+**Várt eredmény**:              A CSV fájlokba az adatok generálódnak, ha a mérés lefut.  
+**Kapott eredmény**:            A mérés adatok generálódnak automatikusan. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)   
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 21:40  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: CSV fájl automatikus létrehozása  
+**Várt eredmény**:              A CSV fájlok létrejönnek, ha nem léteznek.  
+**Kapott eredmény**:            Az eddig nem létező fájlok létrejöttek. &#9989; 
+
+---
+
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
 **App verziója**:               v0.0.3  
 **Tesztelés ideje**:            2021. 11. 28. 20:55  
-**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
 **Android verziója**:           Android 11 (Red Velvet Cake)  
 **Tesztelt komponens leírása**: Kötelező elemek kitöltése  
-**Várt eredmény**:              Az alkalmazás Toast ikonnal figyelmeztet, ha nincs kiválasztva a mérni kívánt távolság.
+**Várt eredmény**:              Az alkalmazás Toast ikonnal figyelmeztet, ha nincs kiválasztva a mérni kívánt távolság.  
 **Kapott eredmény**:            A Toast üzenet megjelenik, ha egyik radio button sincs kiválasztva. &#9989; 
 
 ---
 
-**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor) 
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
 **App verziója**:               v0.0.3  
 **Tesztelés ideje**:            2021. 11. 28. 21:00  
 **Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
-**Android verziója**:           Android 11 (Red Velvet Cake) 
-**Tesztelt komponens leírása**: Kötelező elemek kitöltése  
-**Várt eredmény**:              Az alkalmazás Toast ikonnal figyelmeztet, ha nincs kiválasztva a mintavételezés.
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: Kötelező elemek kitöltése   
+**Várt eredmény**:              Az alkalmazás Toast ikonnal figyelmeztet, ha nincs kiválasztva a mintavételezés.  
 **Kapott eredmény**:            A Toast üzenet megjelenik, ha egyik radio button sincs kiválasztva. &#9989; 
 
 ---
 
-**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
 **App verziója**:               v0.0.3  
 **Tesztelés ideje**:            2021. 11. 28. 21:05  
-**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
-**Android verziója**:           Android 11 (Red Velvet Cake) 
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)   
 **Tesztelt komponens leírása**: Kötelező elemek kitöltése   
 **Várt eredmény**:              Az alkalmazás Toast ikonnal figyelmeztet, ha nincs kiválasztva a telefon orientációja.
 **Kapott eredmény**:            A Toast üzenet megjelenik, ha egyik radio button sincs kiválasztva. &#9989; 
 
 ---
 
-**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
-**App verziója**:               v0.0.5 
-**Tesztelés ideje**:            2021. 12. 05. 21:30
-**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
-**Android verziója**:           Android 11 (Red Velvet Cake) 
-**Tesztelt komponens leírása**: CSV fájl betöltődik
-**Várt eredmény**:              A CSV fájlok betöltődnek
-**Kapott eredmény**:            A CSV fájlok betöltődtek. &#9989; 
 
----
 
 **Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
-**App verziója**:               v0.0.5 
-**Tesztelés ideje**:            2021. 12. 05. 21:34
-**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
-**Android verziója**:           Android 11 (Red Velvet Cake) 
-**Tesztelt komponens leírása**: CSV fájlok feltöltődnek 
-**Várt eredmény**:              A CSV fájlokba az adatok generálódnak, ha a mérés lefut.
-**Kapott eredmény**:            A mérés adatok generálódnak automatikusan. &#9989; 
-
----
-
-**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
-**App verziója**:               v0.0.5 
-**Tesztelés ideje**:            2021. 12. 05. 21:40
-**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
-**Android verziója**:           Android 11 (Red Velvet Cake) 
-**Tesztelt komponens leírása**: CSV fájl automatikus létrehozása
-**Várt eredmény**:              A CSV fájlok létrejönnek, ha nem léteznek.
-**Kapott eredmény**:            Az eddig nem létező fájlok létrejöttek. &#9989; 
-
----
-
-**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
-**App verziója**:               v0.0.5 
-**Tesztelés ideje**:            2021. 12. 05. 21:46
-**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 21:46  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
 **Android verziója**:           Android 11 (Red Velvet Cake)  
-**Tesztelt komponens leírása**: Az új mérés gomb navigációja
-**Várt eredmény**:              Az új mérés gomb megnyomására a mérés kezdete fragment jön elő.
+**Tesztelt komponens leírása**: Az új mérés gomb navigációja  
+**Várt eredmény**:              Az új mérés gomb megnyomására a mérés kezdete fragment jön elő.  
 **Kapott eredmény**:            A funkció megfelelően működik, navigáció történik a mérés kezdetéhez. &#9989; 
 
 ---
 
 **Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
-**App verziója**:               v0.0.5 
-**Tesztelés ideje**:            2021. 12. 05. 21:52
-**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
-**Android verziója**:           Android 11 (Red Velvet Cake) 
-**Tesztelt komponens leírása**: Restart gomb működése
-**Várt eredmény**:              Restart gomb megnyomására újra lehet indítani a mérést, a számláló 0/3-ra áll vissza.
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 21:52  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: Restart gomb működése  
+**Várt eredmény**:              Restart gomb megnyomására újra lehet indítani a mérést, a számláló 0/3-ra áll vissza.  
 **Kapott eredmény**:            A restart gomb megnyomása után újra elkezdhetjük a mérést. &#9989; 
 
 ---
 
 **Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
-**App verziója**:               v0.0.5 
-**Tesztelés ideje**:            2021. 12. 05. 22:00
-**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
-**Android verziója**:           Android 11 (Red Velvet Cake)  
-**Tesztelt komponens leírása**: Az eredmények oldal megfelelő megjelenése adatokkal
-**Várt eredmény**:              A szükséges adatokkal megjelenik a mérési eredmény.
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 22:00  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)   
+**Tesztelt komponens leírása**: Az eredmények oldal megfelelő megjelenése adatokkal  
+**Várt eredmény**:              A szükséges adatokkal megjelenik a mérési eredmény.  
 **Kapott eredmény**:            A mérési eredmények oldal betöltődik a gombokkal és az adatokkal. &#9989; 
 
 ---
 
-**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
-**App verziója**:               v0.0.5 
-**Tesztelés ideje**:            2021. 12. 05. 22:11
-**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
-**Android verziója**:           Android 11 (Red Velvet Cake)  
-**Tesztelt komponens leírása**: Restart gomb kattinthatósága
-**Várt eredmény**:              A restart gombra addig nem lehet rányomni, amíg nincs futó mérés, vagy legalább egy mérés nem futott le.
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)   
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 22:11  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)   
+**Tesztelt komponens leírása**: Restart gomb kattinthatósága  
+**Várt eredmény**:              A restart gombra addig nem lehet rányomni, amíg nincs futó mérés, vagy legalább egy mérés nem futott le.  
 **Kapott eredmény**:            A restart gombot addig nem lehet megnyomni, amíg nincs futó mérés, vagy legalább egy mérés nem futott le. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)   
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 22:45  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: MeasureResultFragment tesztelése  
+**Várt eredmény**:              Az adatok viewmodel és safeargs segítségével átkerül jó formátumba a megadott helyekre  
+**Kapott eredmény**:            A viewmodel segítségével elérhető a korábbi fragmentekről bekért adatok. &#9989;  
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)   
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 22:50  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: Mérés tesztelése  
+**Várt eredmény**:              40 cm esetén körülbelül 40 cm adatot kapunk szenzoradatként.  
+**Kapott eredmény**:            Túl nagy távolság eltérés, sebesség inkonzisztens. &#10060; 
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)   
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 23:01  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: Mérés tesztelése  
+**Várt eredmény**:              100 cm esetén körülbelül 100 cm adatot kapunk szenzoradatként.  
+**Kapott eredmény**:            Túl nagy távolság eltérés, sebesség inkonzisztens. &#10060;
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)   
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 23:06  
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: Mérés tesztelése  
+**Várt eredmény**:              200 cm esetén körülbelül 200 cm adatot kapunk szenzoradatként.  
+**Kapott eredmény**:            Túl nagy távolság eltérés, sebesség inkonzisztens. &#10060; 
+
+---
