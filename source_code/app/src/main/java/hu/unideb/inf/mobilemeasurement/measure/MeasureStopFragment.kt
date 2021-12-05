@@ -6,6 +6,8 @@ import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.os.Bundle
+import android.util.Log
+
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -24,7 +26,7 @@ import kotlin.math.sqrt
 class MeasureStopFragment : Fragment(), SensorEventListener {
     /** Setup values **/
     private val maxNumberOfMeasures : Int = 3
-    private val threshold : Double = 0.04
+    private val threshold : Double = 0.05
     private val thresholdNegative : Double = threshold * -1
 
     /**Sensors**/
@@ -161,11 +163,13 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
                 }
                 deltaT = ((event.timestamp / 10000000).toDouble() - oldTimeMS) / 1000 //seconds!
 
-                var acceleration : Double = sqrt(xVal.toDouble().pow(2.0) + yVal.toDouble().pow(2.0) + zVal.toDouble().pow(2.0));
+                //var acceleration : Double = sqrt(xVal.toDouble().pow(2.0) + yVal.toDouble().pow(2.0) + zVal.toDouble().pow(2.0));
+                oldVelocity  = xVal.toDouble() * deltaT + yVal.toDouble() * deltaT + zVal.toDouble() * deltaT
 
-                oldVelocity = abs(oldVelocity - acceleration * deltaT)
+                //oldVelocity = abs(oldVelocity - acceleration * deltaT)
 
-                xDistance += oldVelocity * deltaT + 1/2 * acceleration * (deltaT/1000).pow(2)
+                //xDistance += oldVelocity * deltaT + 1/2 * acceleration * (deltaT/1000).pow(2)
+                xDistance += oldVelocity * deltaT
 
 
                 /* s = u * t + 1/2 * a * t^2
