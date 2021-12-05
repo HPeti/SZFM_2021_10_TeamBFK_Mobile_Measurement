@@ -64,6 +64,41 @@ class MeasureResultFragment : Fragment() {
         measure1Value.setText(viewModel.phone_ID.value.toString())
         measure2Value.setText(viewModel.measure_ID.value.toString())
         measure3Value.setText(currentDate)
+        writeMeasurementToFile()
         return binding.root
+    }
+
+    private fun convertMeasurementToString(measurementCount : Int,calculatedDistance : Double) : String {
+        return (viewModel.phone_ID.value.toString() + ";"
+                + currentDate + ";"
+                + viewModel.measure_ID.value.toString() + ";"
+                + measurementCount.toString() + ";"
+                + viewModel.distance.value.toString() + ";"
+                + viewModel.sampling_Rate.value.toString() + ";"
+                + viewModel.orientation.value.toString() + ";"
+                + calculatedDistance.toString())
+    }
+
+    private fun writeMeasurementToFile() {
+        val path = context?.getExternalFilesDir(null)
+        val csvsDirectory = File(path, "measurements")
+        csvsDirectory.mkdirs()
+
+        val file = File(csvsDirectory,"measurements.csv")
+        Log.i("MeasureResultFragment:CSV", "CSV file path is \'"+file.path.toString()+"\'")
+        if(!file.exists()){
+            file.appendText("phoneID;date;measureID;sensorData;distance;samplingRate;orientation;calculatedDistance\n")
+            Log.i("MeasureResultFragment:CSV", "measurements.csv created, added csv header.")
+        }
+        file.appendText(
+            convertMeasurementToString(1,viewModel.calculatedDistance1.value!!.toDouble()) + "\n"
+        )
+        file.appendText(
+            convertMeasurementToString(2, viewModel.calculatedDistance2.value!!.toDouble()) + "\n"
+        )
+        file.appendText(
+            convertMeasurementToString(3, viewModel.calculatedDistance3.value!!.toDouble()) + "\n"
+        )
+        Log.i("MeasureResultFragment:CSV", "File exists, appending measurements.csv")
     }
 }
