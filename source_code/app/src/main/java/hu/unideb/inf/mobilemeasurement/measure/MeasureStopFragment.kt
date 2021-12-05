@@ -105,13 +105,15 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
             false)
 
         setupBinding(binding)
-
+        binding.restartMeasureButton.setClickable(false)
         binding.startMeasureButton.setOnClickListener{
             if(currentNumberOfMeasures < maxNumberOfMeasures && !isMeasureRunning){
                 initMeasurementValues()
                 setUpSensor()
                 isMeasureRunning = true
                 incrementCompletion()
+                binding.restartMeasureButton.setClickable(true)
+
             }
         }
 
@@ -140,6 +142,15 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
                             viewModel.calculatedDistance3.value!!.toDouble()))
                 }
             }
+        }
+
+        binding.restartMeasureButton.setOnClickListener { view : View ->
+            isMeasureRunning = false
+            sensorManager.unregisterListener(this)
+                binding.restartMeasureButton.setClickable(false)
+            currentNumberOfMeasures = 0
+            binding.completionTextView.setText(currentNumberOfMeasures.toString() + " / " + maxNumberOfMeasures.toString())
+
         }
         return binding.root
     }
