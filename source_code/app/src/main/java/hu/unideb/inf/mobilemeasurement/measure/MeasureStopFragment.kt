@@ -203,6 +203,12 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
                 deltaTimeText.text = "delta time: "+ deltaT + " sec," + " velocity: "+ oldVelocity
                 xDistanceText.text = "X distance: " + xDistance * 100 + " cm"
                 xVelocityTextView.text = "X velocity: " + xVelocity
+
+                when (currentNumberOfMeasures){
+                    1 -> viewModel.sensorData1.value!!.add(SensorData(xVal,yVal,zVal))
+                    2 -> viewModel.sensorData2.value!!.add(SensorData(xVal,yVal,zVal))
+                    3 -> viewModel.sensorData3.value!!.add(SensorData(xVal,yVal,zVal))
+                }
             }
             oldTimeMS =(event.timestamp / 1000000 ).toDouble()
         }
