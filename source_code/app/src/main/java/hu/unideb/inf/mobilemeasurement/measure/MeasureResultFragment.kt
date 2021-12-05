@@ -131,12 +131,12 @@ class MeasureResultFragment : Fragment() {
             file.appendText(convertSensorDataToString(1,eventNumber,item) + "\n")
         }
         eventNumber = 0
-        for (item : SensorData in viewModel.sensorData1.value!!.toTypedArray()){
+        for (item : SensorData in viewModel.sensorData2.value!!.toTypedArray()){
             eventNumber++
             file.appendText(convertSensorDataToString(2,eventNumber,item) + "\n")
         }
         eventNumber = 0
-        for (item : SensorData in viewModel.sensorData1.value!!.toTypedArray()){
+        for (item : SensorData in viewModel.sensorData3.value!!.toTypedArray()){
             eventNumber++
             file.appendText(convertSensorDataToString(3,eventNumber,item)+ "\n")
         }
