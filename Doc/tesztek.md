@@ -135,8 +135,8 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
 **App verziója**:               v0.0.4  
 **Tesztelés ideje**:            2021. 11. 2. 21:49  
-**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
-**Android verziója**:           Android 11 R  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
+**Android verziója**:           Android 11 R    
 **Tesztelt komponens leírása**: Főoldal megjelenése  
 **Várt eredmény**:              A főoldal elemei betöltenek, képpel, szöveggel és gombbal.  
 **Kapott eredmény**:            A főoldal elemei betöltöttek, megfelelő pozíciókban. &#9989;  
@@ -201,7 +201,7 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
 **App verziója**:               v0.0.4  
 **Tesztelés ideje**:            2021. 11. 2. 21:51  
-**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
 **Android verziója**:           Android 11 R  
 **Tesztelt komponens leírása**: Főoldal navigációja  
 **Várt eredmény**:              A 'Mérés indítása' gomb átvisz a 'Mérés' oldalra  
@@ -322,6 +322,17 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 ---
 
 **Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 5. 23:10  
+**Telefon modellje**:           Samsung Galaxy A40  
+**Android verziója**:           Android 11  
+**Tesztelt komponens leírása**: Mérés indítása megjelenése  
+**Várt eredmény**:              A mérés indítása felület megfelelően jelenik meg  
+**Kapott eredmény**:            A mérés indítása felület alló helyzetben az oldal bal szélét vágja le, fekvő helyzet le lett tiltva. &#10060;
+
+---
+
+**Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
 **App verziója**:               v0.0.3  
 **Tesztelés ideje**:            2021. 11. 27. 20:10  
 **Telefon modellje**:           Samsung Galaxy A40  
@@ -349,7 +360,51 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Android verziója**:           Android 11  
 **Tesztelt komponens leírása**: A mérés leállítása felület gombjainak működése  
 **Várt eredmény**:              A mérés leállítása felület gombjai benyomásával eléri a szenzorokat és megjeleníti azokat  
-**Kapott eredmény**:            A mérés leállítása felület gombjai benyomásával eléri a szenzorokat és megjeleníti azokat (a restart gom még nem működik) &#9989;
+**Kapott eredmény**:            A mérés leállítása felület gombjai benyomásával eléri a szenzorokat és megjeleníti azokat (a restart gomb még nem működik) &#9989;
+
+---
+
+**Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 5. 23:10  
+**Telefon modellje**:           Samsung Galaxy A40  
+**Android verziója**:           Android 11  
+**Tesztelt komponens leírása**: A mérés leállítása felület gombjainak működése  
+**Várt eredmény**:              A mérés leállítása felület gombjai benyomásával eléri a szenzorokat és megjeleníti azokat + mostmár a distanc-re is kihatással van  
+**Kapott eredmény**:            A mérés leállítása felület gombjai benyomásával eléri a szenzorokat és megjeleníti azokat + mostmár a distanc-re is kihatással van &#9989;
+
+---
+
+**Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 5. 23:10  
+**Telefon modellje**:           Samsung Galaxy A40  
+**Android verziója**:           Android 11  
+**Tesztelt komponens leírása**: A mérés leállítása felület befejezése  
+**Várt eredmény**:              A mérés leállítása felület a mérés átdob a mérés eredménye oldalra  
+**Kapott eredmény**:            A mérés leállítása felület a mérés átdob a mérés eredménye oldalra &#9989;  
+
+---
+
+**Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 5. 23:10  
+**Telefon modellje**:           Samsung Galaxy A40  
+**Android verziója**:           Android 11  
+**Tesztelt komponens leírása**: A mérés eredménye felület a megfelelő adatok megjelenítése  
+**Várt eredmény**:              A mérés eredménye felület megfelelő kezdő adatokkat jeleníti meg(id, mintavételezés, ...)  
+**Kapott eredmény**:            A mérés eredménye felület megfelelő kezdő adatokkat jeleníti meg(id, mintevételezés, ...) &#9989;  
+
+---
+
+**Tesztelést elvégezte**:       ([Nyika-Benedek](https://github.com/Nyika-Benedek))  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 5. 23:10  
+**Telefon modellje**:           Samsung Galaxy A40  
+**Android verziója**:           Android 11  
+**Tesztelt komponens leírása**: A mérés eredménye felület a megfelelő adatok megjelenítése  
+**Várt eredmény**:              A mérés eredménye felület megfelelő mérési adatokkat jeleníti meg(id, mintavételezés, ...)  
+**Kapott eredmény**:            A mérés eredménye felület megfelelő mérési adatokkat jeleníti meg(id, mintevételezés, ...) &#9989;  
 
 ---
 
@@ -384,7 +439,7 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
 **App verziója**:               v0.0.4  
 **Tesztelés ideje**:            2021. 11. 2. 21:55  
-**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
 **Android verziója**:           Android 11 R  
 **Tesztelt komponens leírása**: Night mode működése  
 **Várt eredmény**:              A Night mode kapcsoló átkapcsol világos és sötét téma között  
@@ -441,7 +496,7 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
 **App verziója**:               v0.0.4  
 **Tesztelés ideje**:            2021. 11. 2. 22:05  
-**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
 **Android verziója**:           Android 11 R  
 **Tesztelt komponens leírása**: Verzió szám megjelenése  
 **Várt eredmény**:              A jelenlegi verziószám jól megjelenik az információs oldalon is.  
@@ -499,7 +554,7 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
 **App verziója**:               v0.0.4  
 **Tesztelés ideje**:            2021. 11. 2. 22:07  
-**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
 **Android verziója**:           Android 11 R  
 **Tesztelt komponens leírása**: Adatbáziskapcsolat kialakítása  
 **Várt eredmény**:              Az adatbázis kapcsolat létrejön lokális hálózaton belül    
@@ -616,7 +671,7 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
 **App verziója**:               v0.0.4  
 **Tesztelés ideje**:            2021. 11. 2. 22:10  
-**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
 **Android verziója**:           Android 11 R  
 **Tesztelt komponens leírása**: CSV kiírása  
 **Várt eredmény**:              Ki tudunk írni egy fájlba tetszőleges szöveget  
@@ -660,7 +715,7 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
 **App verziója**:               v0.0.4  
 **Tesztelés ideje**:            2021. 11. 2. 22:12  
-**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
 **Android verziója**:           Android 11 R  
 **Tesztelt komponens leírása**: CSV olvasása   
 **Várt eredmény**:              Be tudunk olvasn egy fájlból tetszőleges szöveget  
@@ -704,7 +759,7 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
 **App verziója**:               v0.0.4  
 **Tesztelés ideje**:            2021. 11. 2. 22:20  
-**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG) 
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
 **Android verziója**:           Android 11 R  
 **Tesztelt komponens leírása**: CSV mentési helye  
 **Várt eredmény**:              A generált CSV fájl az \Android\data\hu.unideb.inf.mobilemeasurement\files\csvs\csv_test_output.csv helyen található meg.
@@ -761,6 +816,39 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelés ideje**:            2021. 12. 05. 21:40  
 **Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
 **Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: CSV fájl automatikus létrehozása  
+**Várt eredmény**:              A CSV fájlok létrejönnek, ha nem léteznek.  
+**Kapott eredmény**:            Az eddig nem létező fájlok létrejöttek. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 21:20  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
+**Android verziója**:           Android 11 R  
+**Tesztelt komponens leírása**: CSV fájl betöltődik  
+**Várt eredmény**:              A CSV fájlok betöltődnek  
+**Kapott eredmény**:            A CSV fájlok betöltődtek. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 21:44  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
+**Android verziója**:           Android 11 R   
+**Tesztelt komponens leírása**: CSV fájlok feltöltődnek  
+**Várt eredmény**:              A CSV fájlokba az adatok generálódnak, ha a mérés lefut.  
+**Kapott eredmény**:            A mérés adatok generálódnak automatikusan. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)   
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 22:10  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
+**Android verziója**:           Android 11 R  
 **Tesztelt komponens leírása**: CSV fájl automatikus létrehozása  
 **Várt eredmény**:              A CSV fájlok létrejönnek, ha nem léteznek.  
 **Kapott eredmény**:            Az eddig nem létező fájlok létrejöttek. &#9989; 
@@ -885,6 +973,97 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelés ideje**:            2021. 12. 05. 23:06  
 **Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)  
 **Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: Mérés tesztelése  
+**Várt eredmény**:              200 cm esetén körülbelül 200 cm adatot kapunk szenzoradatként.  
+**Kapott eredmény**:            Túl nagy távolság eltérés, sebesség inkonzisztens. &#10060; 
+
+---
+
+---
+
+
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 22:26  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
+**Android verziója**:           Android 11 R  
+**Tesztelt komponens leírása**: Az új mérés gomb navigációja  
+**Várt eredmény**:              Az új mérés gomb megnyomására a mérés kezdete fragment jön elő.  
+**Kapott eredmény**:            A funkció megfelelően működik, navigáció történik a mérés kezdetéhez. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 22:36  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
+**Android verziója**:           Android 11 R  
+**Tesztelt komponens leírása**: Restart gomb működése  
+**Várt eredmény**:              Restart gomb megnyomására újra lehet indítani a mérést, a számláló 0/3-ra áll vissza.  
+**Kapott eredmény**:            A restart gomb megnyomása után újra elkezdhetjük a mérést. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)  
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 22:50  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
+**Android verziója**:           Android 11 R   
+**Tesztelt komponens leírása**: Az eredmények oldal megfelelő megjelenése adatokkal  
+**Várt eredmény**:              A szükséges adatokkal megjelenik a mérési eredmény.  
+**Kapott eredmény**:            A mérési eredmények oldal betöltődik a gombokkal és az adatokkal. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)   
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 22:58  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
+**Android verziója**:           Android 11 R   
+**Tesztelt komponens leírása**: Restart gomb kattinthatósága  
+**Várt eredmény**:              A restart gombra addig nem lehet rányomni, amíg nincs futó mérés, vagy legalább egy mérés nem futott le.  
+**Kapott eredmény**:            A restart gombot addig nem lehet megnyomni, amíg nincs futó mérés, vagy legalább egy mérés nem futott le. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)   
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 23:22  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
+**Android verziója**:           Android 11 R  
+**Tesztelt komponens leírása**: MeasureResultFragment tesztelése  
+**Várt eredmény**:              Az adatok viewmodel és safeargs segítségével átkerül jó formátumba a megadott helyekre  
+**Kapott eredmény**:            A viewmodel segítségével elérhető a korábbi fragmentekről bekért adatok. &#9989;  
+
+---
+
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)   
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 23:40  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
+**Android verziója**:           Android 11 R  
+**Tesztelt komponens leírása**: Mérés tesztelése  
+**Várt eredmény**:              40 cm esetén körülbelül 40 cm adatot kapunk szenzoradatként.  
+**Kapott eredmény**:            Túl nagy távolság eltérés, sebesség inkonzisztens. &#10060; 
+
+---
+
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)   
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 23:46  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
+**Android verziója**:           Android 11 R  
+**Tesztelt komponens leírása**: Mérés tesztelése  
+**Várt eredmény**:              100 cm esetén körülbelül 100 cm adatot kapunk szenzoradatként.  
+**Kapott eredmény**:            Túl nagy távolság eltérés, sebesség inkonzisztens. &#10060;
+
+---
+
+**Tesztelést elvégezte**:       [pisti9928](https://github.com/pisti9928)   
+**App verziója**:               v0.0.5  
+**Tesztelés ideje**:            2021. 12. 05. 23:50  
+**Telefon modellje**:           Xiaomi Mi 10T PRO (M2007J3SG)  
+**Android verziója**:           Android 11 R  
 **Tesztelt komponens leírása**: Mérés tesztelése  
 **Várt eredmény**:              200 cm esetén körülbelül 200 cm adatot kapunk szenzoradatként.  
 **Kapott eredmény**:            Túl nagy távolság eltérés, sebesség inkonzisztens. &#10060; 
