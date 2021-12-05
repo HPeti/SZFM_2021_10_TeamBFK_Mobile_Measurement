@@ -620,3 +620,80 @@ Ezeken az eszközönön teszteltük az alkalmazást jelenleg (tesztelés alatt b
 **Tesztelt komponens leírása**: Kötelező elemek kitöltése   
 **Várt eredmény**:              Az alkalmazás Toast ikonnal figyelmeztet, ha nincs kiválasztva a telefon orientációja.
 **Kapott eredmény**:            A Toast üzenet megjelenik, ha egyik radio button sincs kiválasztva. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
+**App verziója**:               v0.0.5 
+**Tesztelés ideje**:            2021. 12. 05. 21:30
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Android verziója**:           Android 11 (Red Velvet Cake) 
+**Tesztelt komponens leírása**: CSV fájl betöltődik
+**Várt eredmény**:              A CSV fájlok betöltődnek
+**Kapott eredmény**:            A CSV fájlok betöltődtek. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
+**App verziója**:               v0.0.5 
+**Tesztelés ideje**:            2021. 12. 05. 21:34
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Android verziója**:           Android 11 (Red Velvet Cake) 
+**Tesztelt komponens leírása**: CSV fájlok feltöltődnek 
+**Várt eredmény**:              A CSV fájlokba az adatok generálódnak, ha a mérés lefut.
+**Kapott eredmény**:            A mérés adatok generálódnak automatikusan. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
+**App verziója**:               v0.0.5 
+**Tesztelés ideje**:            2021. 12. 05. 21:40
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Android verziója**:           Android 11 (Red Velvet Cake) 
+**Tesztelt komponens leírása**: CSV fájl automatikus létrehozása
+**Várt eredmény**:              A CSV fájlok létrejönnek, ha nem léteznek.
+**Kapott eredmény**:            Az eddig nem létező fájlok létrejöttek. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
+**App verziója**:               v0.0.5 
+**Tesztelés ideje**:            2021. 12. 05. 21:46
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: Az új mérés gomb navigációja
+**Várt eredmény**:              Az új mérés gomb megnyomására a mérés kezdete fragment jön elő.
+**Kapott eredmény**:            A funkció megfelelően működik, navigáció történik a mérés kezdetéhez. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
+**App verziója**:               v0.0.5 
+**Tesztelés ideje**:            2021. 12. 05. 21:52
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Android verziója**:           Android 11 (Red Velvet Cake) 
+**Tesztelt komponens leírása**: Restart gomb működése
+**Várt eredmény**:              Restart gomb megnyomására újra lehet indítani a mérést, a számláló 0/3-ra áll vissza.
+**Kapott eredmény**:            A restart gomb megnyomása után újra elkezdhetjük a mérést. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
+**App verziója**:               v0.0.5 
+**Tesztelés ideje**:            2021. 12. 05. 22:00
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: Az eredmények oldal megfelelő megjelenése adatokkal
+**Várt eredmény**:              A szükséges adatokkal megjelenik a mérési eredmény.
+**Kapott eredmény**:            A mérési eredmények oldal betöltődik a gombokkal és az adatokkal. &#9989; 
+
+---
+
+**Tesztelést elvégezte**:       [Sápi Gábor](https://github.com/SapiGabor)  
+**App verziója**:               v0.0.5 
+**Tesztelés ideje**:            2021. 12. 05. 22:11
+**Telefon modellje**:           Samsung Galaxy S20 Ultra (SM-G988B/DS)
+**Android verziója**:           Android 11 (Red Velvet Cake)  
+**Tesztelt komponens leírása**: Restart gomb kattinthatósága
+**Várt eredmény**:              A restart gombra addig nem lehet rányomni, amíg nincs futó mérés, vagy legalább egy mérés nem futott le.
+**Kapott eredmény**:            A restart gombot addig nem lehet megnyomni, amíg nincs futó mérés, vagy legalább egy mérés nem futott le. &#9989; 
