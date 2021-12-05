@@ -48,6 +48,12 @@
     <string name="sampleDeltaTime">delta time: - </string>
     <string name="sampleXDistanceText">X: - cm</string>
     <string name="MainPage">Főoldal</string>
+    <string name="Expected_value">Várt érték</string>
+    <string name="Value">Érték</string>
+    <string name="Measured_value">Mért értékek</string>
+    <string name="Date">Dátum</string>
+    <string name="MeasureResults">A MÉRÉS EREDMÉNYE</string>
+    <string name="Start_New_measure">Új mérés</string>
     <string name="authors">Fejlesztők:  \n
                             Halász Dániel \n
                             Hegedűs Péter \n
