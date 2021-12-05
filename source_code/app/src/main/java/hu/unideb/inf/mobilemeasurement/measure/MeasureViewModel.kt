@@ -2,6 +2,7 @@ package hu.unideb.inf.mobilemeasurement.measure
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import hu.unideb.inf.mobilemeasurement.database.SensorData
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -10,9 +11,9 @@ class MeasureViewModel(distance : Int,
                        phone_ID : String,
                        sampling_Rate : Int,
                        orientation : String,
-                       sensorData1 : ArrayList<Float>,
-                       sensorData2 : ArrayList<Float>,
-                       sensorData3 : ArrayList<Float>,
+                       sensorData1 : ArrayList<SensorData>,
+                       sensorData2 : ArrayList<SensorData>,
+                       sensorData3 : ArrayList<SensorData>,
                        calculatedDistance1 : Double,
                        calculatedDistance2 : Double,
                        calculatedDistance3 : Double) : ViewModel(){
@@ -37,14 +38,14 @@ class MeasureViewModel(distance : Int,
         MutableLiveData<String>()
     }
 
-    val sensorData1 : MutableLiveData<ArrayList<Float>> by lazy {
-        MutableLiveData<ArrayList<Float>>()
+    val sensorData1 : MutableLiveData<ArrayList<SensorData>> by lazy {
+        MutableLiveData<ArrayList<SensorData>>()
     }
-    val sensorData2 : MutableLiveData<ArrayList<Float>> by lazy {
-        MutableLiveData<ArrayList<Float>>()
+    val sensorData2 : MutableLiveData<ArrayList<SensorData>> by lazy {
+        MutableLiveData<ArrayList<SensorData>>()
     }
-    val sensorData3 : MutableLiveData<ArrayList<Float>> by lazy {
-        MutableLiveData<ArrayList<Float>>()
+    val sensorData3 : MutableLiveData<ArrayList<SensorData>> by lazy {
+        MutableLiveData<ArrayList<SensorData>>()
     }
     val calculatedDistance1 : MutableLiveData<Double> by lazy {
         MutableLiveData<Double>()

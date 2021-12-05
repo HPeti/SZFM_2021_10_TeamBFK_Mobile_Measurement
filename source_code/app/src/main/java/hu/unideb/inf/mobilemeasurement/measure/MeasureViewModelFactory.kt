@@ -2,6 +2,7 @@ package hu.unideb.inf.mobilemeasurement.measure
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import hu.unideb.inf.mobilemeasurement.database.SensorData
 import java.lang.IllegalArgumentException
 import java.util.*
 import kotlin.collections.ArrayList
@@ -12,9 +13,9 @@ class MeasureViewModelFactory (
     private val phone_ID : String,
     private val samplingRate : Int,
     private val orientation : String,
-    private val sensorData1 : ArrayList<Float>,
-    private val sensorData2 : ArrayList<Float>,
-    private val sensorData3 : ArrayList<Float>,
+    private val sensorData1 : ArrayList<SensorData>,
+    private val sensorData2 : ArrayList<SensorData>,
+    private val sensorData3 : ArrayList<SensorData>,
     private val calculatedDistance1 : Double,
     private val calculatedDistance2 : Double,
     private val calculatedDistance3 : Double,
