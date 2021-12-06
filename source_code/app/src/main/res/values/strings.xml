@@ -11,10 +11,10 @@
     <string name="version_number">0.0.5</string>
     <string name="copyright">\@TeamBFK 2021</string>
     <string name="measureDistanceText">Mérni kívánt távolság:</string>
-    <string name="distance1">40cm</string>
-    <string name="distance2">1m</string>
-    <string name="distance3">2m</string>
-    <string name="distance4">5m</string>
+    <string name="distance1">40 cm</string>
+    <string name="distance2">1 m</string>
+    <string name="distance3">2 m</string>
+    <string name="distance4">5 m</string>
     <string name="Next">Következő</string>
     <string name="measureID">Mérés ID:</string>
     <string name="measureIDHint">ID</string>
@@ -24,8 +24,8 @@
     <string name="orientation">Telefon Orientációja:</string>
     <string name="horizontal">Vízszintes</string>
     <string name="vertical">Függőleges</string>
-    <string name="A">A</string>
-    <string name="B">B</string>
+    <string name="sampling_10ms">10 ms</string>
+    <string name="sampling_100ms">100 ms</string>
     <string name="imageViewContentDescription">This is the schema of the application.</string>
     <string name="Result">Results fragment</string>
     <string name="Start">Start</string>
