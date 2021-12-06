@@ -107,6 +107,9 @@ class MeasureStartFragment : Fragment() {
                 if(binding.measureIDInput.text.isEmpty()){
                     viewModel.measure_ID.value = "no id"
                 }
+                else{
+                    viewModel.measure_ID.value = binding.measureIDInput.text.toString()
+                }
                 viewModel.phone_ID.value = phoneID
                 Log.i("MeasureStart", viewModel.phone_ID.value.toString())
                 view.findNavController()
