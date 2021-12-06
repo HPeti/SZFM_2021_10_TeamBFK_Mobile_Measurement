@@ -11,6 +11,10 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import hu.unideb.inf.mobilemeasurement.R
 import hu.unideb.inf.mobilemeasurement.databinding.FragmentOptionsBinding
+import android.os.Environment
+import android.widget.Toast
+import java.io.File
+
 
 class OptionsFragment : Fragment() {
     lateinit var darkModeSwitch : Switch
@@ -45,6 +49,30 @@ class OptionsFragment : Fragment() {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
                 Log.i("OptionsFragment", "Night mode disabled")
             }
+        }
+
+        binding.deleteDataButton.setOnClickListener{
+            val path = context?.getExternalFilesDir(null)
+            val csvsDirectory = File(path, "measurements")
+            if(csvsDirectory.exists()){
+                Log.i("OptionsFragment:deleteData", "measurements directory exists")
+                if (csvsDirectory.isDirectory()) {
+                    val children: Array<String> = csvsDirectory.list()
+                    for (i in children.indices) {
+                        File(csvsDirectory, children[i]).delete()
+                    }
+                    csvsDirectory.delete()
+                }
+                Toast.makeText(activity?.applicationContext, "Adatok törlése megtörtént!", Toast.LENGTH_SHORT).show();
+                Log.i("OptionsFragment:deleteData", "Data deletion done!")
+            }
+            else{
+                Toast.makeText(activity?.applicationContext, "Nincs törölhető adat!", Toast.LENGTH_SHORT).show();
+                Log.i("OptionsFragment:deleteData", "No data found!")
+            }
+
+
+
         }
 
         binding.modelTextView.setText(android.os.Build.MODEL)
