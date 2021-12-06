@@ -6,6 +6,7 @@ import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.os.Bundle
+import android.util.Log
 
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -73,7 +74,7 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
         xVelocityTextView = binding.xVelocityTextView
 
         completionText.text = currentNumberOfMeasures.toString() + " / " + maxNumberOfMeasures
-
+        Log.i("measureid at stop", MeasureStopFragmentArgs.fromBundle(requireArguments()).measureID.toString())
         viewModelFactory = MeasureViewModelFactory(MeasureStopFragmentArgs.fromBundle(requireArguments()).distance,
             MeasureStopFragmentArgs.fromBundle(requireArguments()).measureID,
             MeasureStopFragmentArgs.fromBundle(requireArguments()).phoneID,
@@ -120,9 +121,9 @@ class MeasureStopFragment : Fragment(), SensorEventListener {
         binding.stopMeasureButton.setOnClickListener{ view ->
             if(isMeasureRunning){
                 when (currentNumberOfMeasures){
-                    1 -> viewModel.calculatedDistance1.value = distance
-                    2 -> viewModel.calculatedDistance2.value = distance
-                    3 -> viewModel.calculatedDistance3.value = distance
+                    1 -> viewModel.calculatedDistance1.value = distance * 100
+                    2 -> viewModel.calculatedDistance2.value = distance * 100
+                    3 -> viewModel.calculatedDistance3.value = distance * 100
                 }
                 sensorManager.unregisterListener(this)
                 isMeasureRunning = false
