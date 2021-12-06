@@ -170,13 +170,13 @@
                         android:id="@+id/sampling_A"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/A" />
+                        android:text="@string/sampling_10ms" />
 
                     <RadioButton
                         android:id="@+id/sampling_B"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/B" />
+                        android:text="@string/sampling_100ms" />
 
                 </RadioGroup>
             </LinearLayout>
